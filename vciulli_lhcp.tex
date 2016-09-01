@@ -2,7 +2,19 @@
 
 \usepackage{ptdr-definitions}
 
-\providecommand{\NLOJETPP} {{\textsc{NLOJet++}}\xspace} \providecommand{\kts}{\ensuremath{k_{\mathrm{t}}}\xspace}
+\providecommand{\NLOJETPP} {{\textsc{NLOJet++}}\xspace} 
+\providecommand{\NJET} {{\textsc{NJet}}\xspace} 
+\providecommand{\BLACKHAT} {{\textsc{BlackHat}}\xspace} 
+\providecommand{\HEJ} {{\textsc{HEJ}}\xspace} 
+\providecommand{\kts}{\ensuremath{k_{\mathrm{t}}}\xspace}
+\def\as{\ensuremath{\alpha_\mathrm{S}}\xspace}
+\def\asq{\ensuremath{\alpha_\mathrm{S}(Q)}\xspace}
+\providecommand{\alpsmz}{\ensuremath{\alpha_\mathrm{S}(M_\mathrm{Z})}\xspace}
+\providecommand{\alpsq}{\ensuremath{\alpha_S(Q)}\xspace}
+\providecommand{\dphi}{\ensuremath{\Delta\phi_\text{dijet}}\xspace}
+\providecommand{\ptmax}{\ensuremath{\pt^{\text{max}}}\xspace}
+\providecommand{\PYTHIAS} {{\textsc{pythia6}}\xspace}
+\providecommand{\PYTHIAE} {{\textsc{pythia8}}\xspace}
 
 \title{Jet and photon physics in pp collisions at the LHC}
 
@@ -17,7 +29,7 @@ Nazionale di Fisica Nucleare, Sezione di Firenze, via G. Sansone 1, 50019 Sesto 
 \FullConference{Fourth Annual Large Hadron Collider Physics\\ 13-18 June 2016\\ Lund, Sweden}
 
 \begin{document}
-
+`
 \section{Introduction}
 
 Quantum chromodynamics (QCD) is the fundamental theory describing strong interactions among partons, \ie quarks and
@@ -43,36 +55,36 @@ Electromagnetic Calorimeter to reconstruct jets in the region $|\eta|<0.9$.
 The main experimental difficulties are the jet energy calibration and resolution estimate and the subtraction of pileup
 effects. Additional proton-proton interactions (pileup) produce unwanted calorimetric energy depositions and additional
 tracks. Different strategies have been developed to subtract these effect depending on the jet recontruction.
-Furthermore, to compare with measurements, the parton-level calculations must be complemented with corrections for nonperturbative
-(NP) effects that involve the modeling of hadronisation (HAD) and multiparton interactions (MPI).
+
+The results are usually compared to fixed-order predictions at NLO precision, complemented with electroweak corrections, and to predictions of
+various Monte Carlo (MC) event generators that combine leading-order (LO) or next-leading-order (NLO) pQCD with the modeling of parton
+showers (PS), hadronisation (HAD) and multiparton interactions (MPI).
+Fixed-order parton-level calculations, to be compared with measurement, must be complemented with corrections for nonperturbative
+(NP) effects that involve the modeling of HAD and MPI, which are obtained from MC programs. 
 
 Inclusive jet production measurements have been perfomed with data collected at different centre-of-mass energies, ranging from 2.76 GeV to 13 TeV. 
 Using 13 TeV data collected in 2015, the CMS experiment measured the double-differential inclusive jet
 cross section as a function of the jet \pt and absolute jet rapidity $|y|$.\cite{Khachatryan:2016wdh}. The data samples correspond to
 an integrated luminosity of 71\pbinv. During data collection the LHC operated with a $50\unit{ns}$ bunch spacing and the
-average number of pileup interactions observed in these data is ${\approx}19$. 
-%The results are compared to fixed-order
-%predictions at NLO precision, complemented with electroweak and nonperturbative corrections, and to predictions of
-%various Monte Carlo (MC) event generators that combine leading-order (LO) or NLO pQCD with the modeling of parton
-%showers (PS), HAD, and MPI.  
+average number of pileup interactions observed in these data is ${\approx}19$.   
 
 Figure~\ref{fig:crossSection} shows the double-differential inclusive jet cross section measurements,
 presented as a function of \pt for seven $|y|$ ranges, after
 unfolding for detector effects, using the anti-\kts algorithm with $R =
-0.7$ and $0.4$, respectively. The measurements are compared to the predictions from \POWHEG +
-\PYTHIA. The data are remarkably consistent with the predictions over a wide range of jet \pt from 114\GeV up to
+0.7$ and $0.4$, respectively. The measurements are compared to the predictions from \POWHEG~\cite{Alioli:2010xa}
+matched to \PYTHIAE~\cite{Sjostrand:2007gs} PS. The data are remarkably consistent with the predictions over a wide range of jet \pt from 114\GeV up to
 2\TeV.
 
 \begin{figure*}[htbp] \centering
   \includegraphics[width=0.48\textwidth]{Figure1-a.pdf}
   \includegraphics[width=0.48\textwidth]{Figure1-b.pdf}
   \caption{Double-differential inclusive jet cross section as function of jet \pt at 13 TeV. Data (points) and
-predictions from \POWHEG (PH) + \PYTHIA (P8) with tune CUETM1 (line) are shown. Jets are clustered with the anti-\kts
+predictions from \POWHEG + \PYTHIAE with tune CUETM1 (line) are shown. Jets are clustered with the anti-\kts
 algorithm with $R = 0.7$ (left) and $0.4$ (rigth).}
   \label{fig:crossSection}
 \end{figure*}
 
-The measurements are also compared to the \NLOJETPP~\cite{Nagy:2003tz} predictions using the CT14 PDF set~\cite{Dulat:2015mca}, corrected for NP and electroweak effects.
+Results are also compared to the \NLOJETPP~\cite{Nagy:2003tz} predictions using the CT14 PDF set~\cite{Dulat:2015mca}, corrected for NP and electroweak effects.
 The ratios of data over the \NLOJETPP predictions are shown in Fig.~\ref{fig:ratio_CT14} for the rapidity region
 $|y|<0.5$, but the same trend is observed in all the rapidity ranges. The relatively poor agreement for $R = 0.4$ might
 be due to parton-shower and soft-gluon resummation contributions, which are missing in fixed-order calculations, or to
@@ -83,10 +95,181 @@ higher-order effects.
   \includegraphics[width=0.48\textwidth]{Figure2-b.pdf}
   \caption{Ratio of measured values to theoretical prediction from \NLOJETPP using the CT14 PDF set and corrected for
 the NP and electroweak effects. Predictions employing three other PDF sets are also shown for comparison. Jets are
-clustered with the anti-\kts algorithm with a distance parameter of 0.7 and 0.4. The error bars correspond to the statistical
+clustered with the anti-\kts algorithm with a distance parameter of
+0.7 (left) and 0.4 (right). The error bars correspond to the statistical
 uncertainties of the data and the shaded bands to the total experimental systematic uncertainties.}
   \label{fig:ratio_CT14}
 \end{figure*}
+
+The CMS collaboration has also recently made available new results for the double-differential inclusive jet cross section at 8
+\TeV~\cite{CMS:2015haa} and 2.76 \TeV~\cite{Khachatryan:2015luy}. In the measurement at 8 \TeV, the ratio to the
+cross section at 7 \TeV is also presented. A good agreement is observed in general between data and predictions, but for high
+transverse momentum some discrepancies is present, in particular in the region $1.0 < \abs{y} < 1.5$, shown in
+Figure~\ref{fig:ratio8to7}.
+
+\begin{figure*}[hbpt]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Figure3.pdf}
+  \caption{Ratio of double-differential inclusive jet cross sections
+    between $\mathrm{\sqrt{s}=8}$\TeV and $\mathrm{\sqrt{s}=7}$\TeV
+    for rapidity bins $1.0 < |y| < 1.5$. In the top plots the yellow band shows the total
+    experimental uncertainty, accounting for the correlation between
+    different energies, and the theoretical prediction for the CT10
+    PDF set is overlaid. The bottom plot shows the ratio of the measured
+    cross section ratio to its theoretical prediction, with the
+    experimental uncertainty shown as a full line band, and
+    theoretical uncertainties as a shaded band.}
+  \label{fig:ratio8to7}
+\end{figure*}
+
+Furthermore, the strong coupling constant \as is extracted from the measurement at 8 \TeV, using for the calculation the CT10 NLO PDF
+set~\cite{Lai:2010vv}, which is found to provide the best agreement with data.
+With the entire probed \pt range and six different rapidity bins, the best fitted value is found to be $\alpsmz =
+0.1164^{+0.0060}_{-0.0043}$, which is compatible with the best current world average $\alpsmz =
+0.1185\pm0.0006$~\cite{Agashe:2014kda}. The running of \asq, measured for nine different values of renormalization scale 
+between 86\GeV and 1.5\TeV, is in good agreement with previous experiments and extends the measurement to the highest
+values of the renormalization scale.
+
+\begin{figure*}[hbpt]
+  \centering
+ \includegraphics[width=0.9\textwidth]{Figure4.pdf}
+ \caption{The running \asq as a function of the scale $Q$ is shown, as
+   obtained by using the CT10 NLO PDF set. The solid line and the
+   uncertainty band are obtained by evolving the extracted \alpsmz
+   values by using the 2-loop 5-flavour renormalization group
+   equations. The dashed line represents the evolution of the world
+   average value. The black dots in the figure show the numbers
+   obtained from the $\sqrt{s}=8$\TeV inclusive jet
+   measurement. %Results from other CMS%~\cite{R32, CMSTTBar, CMS-PAS-SMP-12-027}
+   %, D0%~\cite{D0Alpha1, D0Alpha2}
+   %, H1%~\cite{H1Alpha1, H1Alpha2}
+   %, and ZEUS%~\cite{ZEUSAlpha}
+   %measurements are superimposed.
+ }
+\label{fig:AlphasRun}
+\end{figure*}
+
+The ATLAS Collaboration has recently measured the strong coupling constant using the transverse energy-energy
+correlation (TEEC) function and its associated azimuthal asymmetry in multi-jet events at a
+centre-of-mass energy of 7 \TeV~\cite{ATLAS:2015yaa}. The average transverse momentum of the two leading jets is
+required to be larger than 250 GeV. The TEEC distribution is obtained from the $\cos\Delta\phi_{ij}$ between any pair of
+jets $i$ and $j$, weighted by $$w_{ij} = \frac{E_{Ti}E_{Tj}}{(\sum_k E_{Tk})^2} \, ,$$ where $E_T$ is the jet transverse
+energy and the sum runs over all the
+jets in the event. With respect to other observables the TEEC are less sensitive to the jet energy scale and resolution,
+and to PU. The measured TEEC distribution is shown in Figure~\ref{fig:TEEC}, after unfolding for the effect of
+the detector. In the same the result of a fit to pQCD NLO calculations from \NLOJETPP including NP
+corrections is also shown. The measured value of \alpsmz is 
+$$ \alpsmz  = 0.1173 \pm 0.0010 \mathrm{(exp.)} ^{+0.0063}_{-0.0020} \mathrm{(scale)} \pm 0.0017 \mathrm{(PDF)} \pm
+0.0002 \mathrm{(NPC)} \, $$
+and it is also in agreement with the world average. This value has been obtained with the CT10 NLO PDF set, which has
+the largest PDF uncertainty, covering the variations with different PDF sets.
+
+\begin{figure*}[hbpt]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Figure5.pdf}
+  \caption{The unfolded distributions for transverse energy-energy correlation compared with the results of a fit to
+    pQCD NLO calculations including NP corrections. The green shaded band indicates the uncertainty on the
+    theoretical predictions, which includes the sum in quadrature of uncertainties associated with scale, \as, PDF and
+    NP corrections.}
+  \label{fig:TEEC}
+\end{figure*}
+
+The ATLAS Collaboration recently studied 4-jets events at 8 \TeV\cite{Aad:2015nda}, exploring many variables sensitive to the topology and the
+different energy scales of the event. These observables have been compared to predictions from several MC
+generators and from fixed-order NLO calculations. The maximum rapidity difference among a jet pair, $\Delta
+y_{2j}^{max}$, shown in Figure~\ref{fig:4jet}, is one of the variables where some discrepancies are observed. 
+The NLO predictions, \BLACKHAT/\SHERPA~\cite{Berger:2008sj,Bern:2011ep} and
+\NJET/\SHERPA~\cite{Badger:2012pg,Badger:2012pf}, are almost always compatible with the data within their 
+theoretical uncertainties. The \HEJ~\cite{Andersen:2009nu,Andersen:2011hs} all-orders calculation and the multi-leg calculation with up to four partons in the
+matrix element (ME) generated by \MADGRAPH~\cite{Alwall:2014hca} and matched to the \PYTHIAS~\cite{Sjostrand:2006za} PS also provides a good description of
+the data. The $2\ \to 2$ MC generators \PYTHIAE and \HERWIGpp~\cite{Bahr:2008pv}
+ describe the data relatively poorly. These results show therefore 
+the importance of the more sophisticated calculations in a variety of scenarios. 
+
+\begin{figure*}[hbpt]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Figure6a.pdf}\\
+  \includegraphics[width=0.9\textwidth]{Figure6b.pdf}
+  \caption{Unfolded four-jet differential cross section as a function of $\Delta y_{2j}^{max}$, compared to different
+    predictions: Pythia, Herwig++ and MadGraph+Pythia (top), and HEJ, NJet/Sherpa and BlackHat/Sherpa (bottom). The MC
+    and HEJ predictions are multiplied by the factors indicated in the legend in order to be normalized to the events observed in the data. The left 
+    panel shows the full spectra and the right panel the ratios of the different predictions to the data. The solid band represents the total experimental systematic
+    uncertainty centred at one. The patterned band represents the NLO scale and PDF uncertainties calculated from
+    NJet/Sherpa centred at the nominal NJet/Sherpa values. The scale uncertainties for HEJ (not drawn) are typically
+    +50\%-30\%. The ratio curves are formed by the central values and vertical uncertainty lines resulting from the
+    propagation of the statistical uncertainties of the predictions and those of the unfolded data spectrum.} 
+  \label{fig:4jet}
+\end{figure*}
+
+The CMS Collaboration has also recently published new studies of the properties of multi-jets events at 7\TeV~\cite{Khachatryan:2016udy, Khachatryan:2015xwa} and
+8~\TeV~\cite{Khachatryan:2016hkr}. In Figure~\ref{fig:dijet} the azimuthal decorrelation $\dphi$ between the two jets with the largest transverse momenta at
+8\TeV is presented for seven regions of leading jet transverse momentum \ptmax up to 2.2\TeV. The dijet azimuthal decorrelation is caused by
+the radiation of additional jets and probes the dynamics of multi-jet production. The results are compared to calculations in
+pQCD calculations from \NLOJETPP with the CT10 NLO PDF set for 3-jet production with up to four outgoing partons.
+These fixed-order calculations provide NLO predictions for the range of
+$2\pi/3 \leq \dphi < \pi$, corresponding to a final state with at least 3 jets, and LO predictions for $\pi/2 \leq \dphi <
+2\pi/3$, where at least 4-jets must be present. The predictions are normalized separately in these two region and
+describe the data well over several order of magnitude, though they increasingly deviate from data for lower values of
+\dphi, especially at low \ptmax. 
+
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Figure7a.pdf}
+  \caption{Normalized dijet cross section differential in \dphi for
+    seven \ptmax regions, scaled by multiplicative factors for
+    presentation purposes.  The error bars on the data points include
+    statistical and systematic uncertainties. Overlaid on the data
+    (points) are predictions from LO (dashed line; $\pi/2 \leq
+    \dphi < 2\pi/3$) and NLO (solid line; $2\pi/3 \leq \dphi \leq
+    \pi$) calculations using the CT10 NLO PDF set. 
+    % and excluding the bin at $\dphi=\pi$.
+%    The PDF, \as, and scale uncertainties are
+%    added in quadrature to give the total theoretical uncertainty, which
+%    is indicated by the downwards-diagonally (LO) and
+%    upwards-diagonally (NLO) hatched regions around the theory lines.
+}
+  \label{fig:dijet}
+\end{figure}
+
+In Figure~\ref{fig:dijet_ratios_MC_data} the ratio of several MC generators predictions to
+the the data is shown. Similar conclusions as for the 4-jets analysis performed by ATLAS can be drawn. Event generators with only two outgoing
+partons at matrix-element fail to describe the measurement. This apply also to \POWHEG that has NLO 
+QCD corrections matched to the \PYTHIAE PS. In the case of \MADGRAPH+\PYTHIAS from two to four outgoing partons are
+provided by the ME calculations and are matched to the PS, providing a very good description of the data down to very
+low \dphi values.  
+
+\begin{figure*}[hbtp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Figure8.pdf}
+  \caption{Ratios of \PYTHIAS, \HERWIGpp, \PYTHIAE, \MADGRAPH + \PYTHIAS, and
+    \POWHEG + \PYTHIAE predictions to the normalized dijet cross
+    section differential in \dphi, for all \ptmax regions.
+    The solid band indicates the total experimental uncertainty and
+    the error bars on the MC points represent the statistical
+    uncertainties of the simulated data.}
+  \label{fig:dijet_ratios_MC_data}
+\end{figure*}
+
+Jets are not only a probe for pQCD or other high trasverse momentum processes. They are also interesting for their
+properties, which depends mostly on quark fragmentation and hadronisation. An example of this kind of studies is the
+measurement of charged-particle multiplicity $<n_\mathrm{charge}>$ in jets performed by ATLAS on the 8~\TeV data sample\cite{Aad:2016oit}.
+The multiplicity is measured including charged tracks with $\pt > 0.5$, 2 or 5~\GeV, for jets with $\pt > 50$~\GeV and up to
+$1.5$~\TeV. Results are compared to \HERWIGpp, \PYTHIAS and \PYTHIAE with different underlying event tunings, showing
+that the description of data improves for the most recent tunes. 
+The charged multiplicity is important to discriminate between quarks- and gluon-initiated jets, being larger in the case
+of a gluon jet. For this reason after unfolding the results for detector effects, the  $<n_\mathrm{charge}>$ is
+extracted separately for quark and gluon jets as a function of the jet transverse momentum. Results are shown in
+Figure~\ref{fig:chargemult} and confirm that this number is larger for gluon jets as expected, with a dependence on the jet transverse
+momentum.
+
+\begin{figure*}[hbtp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Figure9.pdf}
+  \caption{Jet \pt dependence of charged-particle multiplicity, for tracks $\pt > 0.5$~\GeV, for quark- and
+    gluon-initiated jets.}
+  \label{fig:chargemult}
+\end{figure*}
+
 
 \section{Photon Physics}
 
@@ -112,20 +295,36 @@ uncertainties of the data and the shaded bands to the total experimental systema
   JHEP {\bf 0804} (2008) 063
   doi:10.1088/1126-6708/2008/04/063
   [arXiv:0802.1189 [hep-ph]].
-  %%CITATION = doi:10.1088/1126-6708/2008/04/063;%%
-  %3828 citations counted in INSPIRE as of 15 Aug 2016
 
-\bibitem{Lampl:2008zz} W.~Lampl {\it et al.}, %``Calorimeter clustering algorithms: Description and performance,''
-ATL-LARG-PUB-2008-002, ATL-COM-LARG-2008-003.
+\bibitem{Lampl:2008zz} 
+  W.~Lampl {\it et al.}, 
+  % ``Calorimeter clustering algorithms: Description and performance,''
+  ATL-LARG-PUB-2008-002, ATL-COM-LARG-2008-003.
 
 \bibitem{CMS:2009nxa}
   [CMS Collaboration],
   %``Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus, and MET,''
   CMS-PAS-PFT-09-001.
 
-\bibitem{Khachatryan:2016wdh} V.~Khachatryan {\it et al.} [CMS Collaboration], %``Measurement of the double-differential
-inclusive jet cross section in proton-proton collisions at sqrt(s) = 13 TeV,'' [arXiv:1605.04436 [hep-ex]]. Submitted
-to: Eur.Phys.J.C.
+\bibitem{Khachatryan:2016wdh} 
+  V.~Khachatryan {\it et al.} [CMS Collaboration], 
+  % ``Measurement of the double-differential inclusive jet cross section in proton-proton collisions at sqrt(s) = 13 TeV,'' 
+  [arXiv:1605.04436 [hep-ex]]. 
+  % Submitted to: Eur.Phys.J.C.
+
+\bibitem{Alioli:2010xa}
+  S.~Alioli, K.~Hamilton, P.~Nason, C.~Oleari and E.~Re,
+  %``Jet pair production in POWHEG,''
+  JHEP {\bf 1104} (2011) 081
+  doi:10.1007/JHEP04(2011)081
+  [arXiv:1012.3380 [hep-ph]].
+
+\bibitem{Sjostrand:2007gs}
+  T.~Sjostrand, S.~Mrenna and P.~Z.~Skands,
+  %``A Brief Introduction to PYTHIA 8.1,''
+  Comput.\ Phys.\ Commun.\  {\bf 178} (2008) 852
+  doi:10.1016/j.cpc.2008.01.036
+  [arXiv:0710.3820 [hep-ph]].
 
 \bibitem{Nagy:2003tz}
   Z.~Nagy,
@@ -141,6 +340,155 @@ to: Eur.Phys.J.C.
   doi:10.1103/PhysRevD.93.033006
   [arXiv:1506.07443 [hep-ph]].
 
+\bibitem{CMS:2015haa}
+  CMS Collaboration [CMS Collaboration],
+  %``Measurement of the double-differential inclusive jet cross section at sqrt(s) = 8 TeV,''
+  CMS-PAS-SMP-14-001.
+
+\bibitem{Khachatryan:2015luy}
+  V.~Khachatryan {\it et al.} [CMS Collaboration],
+  %``Measurement of the inclusive jet cross section in pp collisions at $\sqrt{s} = 2.76\,\text {TeV}$,''
+  Eur.\ Phys.\ J.\ C {\bf 76} (2016) no.5,  265
+  doi:10.1140/epjc/s10052-016-4083-z
+  [arXiv:1512.06212 [hep-ex]].
+
+\bibitem{Lai:2010vv}
+  H.~L.~Lai, M.~Guzzi, J.~Huston, Z.~Li, P.~M.~Nadolsky, J.~Pumplin and C.-P.~Yuan,
+  %``New parton distributions for collider physics,''
+  Phys.\ Rev.\ D {\bf 82} (2010) 074024
+  doi:10.1103/PhysRevD.82.074024
+  [arXiv:1007.2241 [hep-ph]].
+
+\bibitem{Agashe:2014kda}
+  K.~A.~Olive {\it et al.} [Particle Data Group Collaboration],
+  %``Review of Particle Physics,''
+  Chin.\ Phys.\ C {\bf 38} (2014) 090001.
+  doi:10.1088/1674-1137/38/9/090001
+
+\bibitem{ATLAS:2015yaa}
+  G.~Aad {\it et al.} [ATLAS Collaboration],
+  %``Measurement of transverse energy-energy correlations in multi-jet events in $pp$ collisions at $\sqrt{s} = 7$ TeV using the ATLAS detector and determination of the strong coupling constant $\alpha_{\mathrm{s}}(m_Z)$,''
+  Phys.\ Lett.\ B {\bf 750} (2015) 427
+  doi:10.1016/j.physletb.2015.09.050
+  [arXiv:1508.01579 [hep-ex]]. 
+
+\bibitem{Aad:2015nda}
+  G.~Aad {\it et al.} [ATLAS Collaboration],
+  %``Measurement of four-jet differential cross sections in $\sqrt{s}=8$ TeV proton-proton collisions using the ATLAS detector,''
+  JHEP {\bf 1512} (2015) 105
+  doi:10.1007/JHEP12(2015)105
+  [arXiv:1509.07335 [hep-ex]].
+
+\bibitem{Berger:2008sj}
+  C.~F.~Berger, Z.~Bern, L.~J.~Dixon, F.~Febres Cordero, D.~Forde, H.~Ita, D.~A.~Kosower and D.~Maitre,
+  %``An Automated Implementation of On-Shell Methods for One-Loop Amplitudes,''
+  Phys.\ Rev.\ D {\bf 78} (2008) 036003
+  doi:10.1103/PhysRevD.78.036003
+  [arXiv:0803.4180 [hep-ph]].
+
+\bibitem{Bern:2011ep}
+  Z.~Bern {\it et al.},
+  %``Four-Jet Production at the Large Hadron Collider at Next-to-Leading Order in QCD,''
+  Phys.\ Rev.\ Lett.\  {\bf 109} (2012) 042001
+  doi:10.1103/PhysRevLett.109.042001
+  [arXiv:1112.3940 [hep-ph]].
+
+\bibitem{Badger:2012pg}
+  S.~Badger, B.~Biedermann, P.~Uwer and V.~Yundin,
+  %``Numerical evaluation of virtual corrections to multi-jet production in massless QCD,''
+  Comput.\ Phys.\ Commun.\  {\bf 184} (2013) 1981
+  doi:10.1016/j.cpc.2013.03.018
+  [arXiv:1209.0100 [hep-ph]].
+
+\bibitem{Badger:2012pf}
+  S.~Badger, B.~Biedermann, P.~Uwer and V.~Yundin,
+  %``NLO QCD corrections to multi-jet production at the LHC with a centre-of-mass energy of $\sqrt{s}=8$ TeV,''
+  Phys.\ Lett.\ B {\bf 718} (2013) 965
+  doi:10.1016/j.physletb.2012.11.029
+  [arXiv:1209.0098 [hep-ph]].
+
+\bibitem{Andersen:2009nu}
+  J.~R.~Andersen and J.~M.~Smillie,
+  %``Constructing All-Order Corrections to Multi-Jet Rates,''
+  JHEP {\bf 1001} (2010) 039
+  doi:10.1007/JHEP01(2010)039
+  [arXiv:0908.2786 [hep-ph]].
+
+\bibitem{Andersen:2011hs}
+  J.~R.~Andersen and J.~M.~Smillie,
+  %``Multiple Jets at the LHC with High Energy Jets,''
+  JHEP {\bf 1106} (2011) 010
+  doi:10.1007/JHEP06(2011)010
+  [arXiv:1101.5394 [hep-ph]].
+
+\bibitem{Alwall:2014hca}
+  J.~Alwall {\it et al.},
+  %``The automated computation of tree-level and next-to-leading order differential cross sections, and their matching to parton shower simulations,''
+  JHEP {\bf 1407} (2014) 079
+  doi:10.1007/JHEP07(2014)079
+  [arXiv:1405.0301 [hep-ph]].
+
+\bibitem{Sjostrand:2006za}
+  T.~Sjostrand, S.~Mrenna and P.~Z.~Skands,
+  %``PYTHIA 6.4 Physics and Manual,''
+  JHEP {\bf 0605} (2006) 026
+  doi:10.1088/1126-6708/2006/05/026
+  [hep-ph/0603175].
+
+\bibitem{Bahr:2008pv}
+  M.~Bahr {\it et al.},
+  %``Herwig++ Physics and Manual,''
+  Eur.\ Phys.\ J.\ C {\bf 58} (2008) 639
+  doi:10.1140/epjc/s10052-008-0798-9
+  [arXiv:0803.0883 [hep-ph]].
+
+ \bibitem{Khachatryan:2016udy}
+  V.~Khachatryan {\it et al.} [CMS Collaboration],
+  %``Azimuthal decorrelation of jets widely separated in rapidity in pp collisions at $\sqrt{s} =$ 7 TeV,''
+  %Submitted to: JHEP
+  [arXiv:1601.06713 [hep-ex]].
+
+\bibitem{Khachatryan:2015xwa}
+  V.~Khachatryan {\it et al.} [CMS Collaboration],
+  %``Distributions of Topological Observables in Inclusive Three- and Four-Jet Events in pp Collisions at sqrt(s) = 7 TeV,''
+  Eur.\ Phys.\ J.\ C {\bf 75} (2015) no.7,  302
+  doi:10.1140/epjc/s10052-015-3491-9
+  [arXiv:1502.04785 [hep-ex]].
+
+\bibitem{Khachatryan:2016hkr}
+  V.~Khachatryan {\it et al.} [CMS Collaboration],
+  %``Measurement of dijet azimuthal decorrelation in pp collisions at $\sqrt{s}$ = 8 TeV,''
+  %Submitted to: Eur.Phys.J.C
+  [arXiv:1602.04384 [hep-ex]].
+
+\bibitem{Aad:2016oit}
+  G.~Aad {\it et al.} [ATLAS Collaboration],
+  %``Measurement of the charged-particle multiplicity inside jets from $\sqrt{s}=8$ TeV $pp$ collisions with the ATLAS detector,''
+  Eur.\ Phys.\ J.\ C {\bf 76} (2016) no.6,  322
+  doi:10.1140/epjc/s10052-016-4126-5
+  [arXiv:1602.00988 [hep-ex]].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bibitem{Chatrchyan:2014fsa}
+  S.~Chatrchyan {\it et al.} [CMS Collaboration],
+  %``Measurement of differential cross sections for the production of a pair of isolated photons in pp collisions at $\sqrt{s}=7\,\text {TeV} $,''
+  Eur.\ Phys.\ J.\ C {\bf 74} (2014) no.11,  3129
+  doi:10.1140/epjc/s10052-014-3129-3
+  [arXiv:1405.7225 [hep-ex]].
 
 
 \end{thebibliography}
