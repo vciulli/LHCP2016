@@ -40,7 +40,7 @@ deviations between data and theory.
 
 The LHC collaborations, ALICE~, ATLAS~\cite{Aad:2008zzm}, CMS~\cite{Chatrchyan:2008aa} and LHCb, performed
 measurements of inclusive jet production, multi-jets production, jet properties and photon and diphoton production. 
-In the following we will review most recent measurements.
+In the following we will review the most recent measurements.
 
 \section{Jet Physics}
 
@@ -252,7 +252,7 @@ low \dphi values.
 
 Jets are not only a probe for pQCD or other high trasverse momentum processes. They are also interesting for their
 properties, which depends mostly on quark fragmentation and hadronisation. An example of this kind of studies is the
-measurement of charged-particle multiplicity $<n_\mathrm{charge}>$ in jets performed by ATLAS on the 8~\TeV data sample\cite{Aad:2016oit}.
+measurement of charged-particle multiplicity $<n_\mathrm{charge}>$ in jets performed by ATLAS on the 8~\TeV data sample~\cite{Aad:2016oit}.
 The multiplicity is measured including charged tracks with $\pt > 0.5$, 2 or 5~\GeV, for jets with $\pt > 50$~\GeV and up to
 $1.5$~\TeV. Results are compared to \HERWIGpp, \PYTHIAS and \PYTHIAE with different underlying event tunings, showing
 that the description of data improves for the most recent tunes. 
@@ -270,6 +270,36 @@ momentum.
   \label{fig:chargemult}
 \end{figure*}
 
+The jet charge is another observable recently measured using 8~\TeV data by ATLAS~\cite{Aad:2015cua} and
+CMS~\cite{CMS:2016yuu}. The jet charge is the \pt weighted sum of the charge of the particles in a
+jet. It is defined as 
+%%%
+\begin{equation} \label{Omdef}
+Q^\kappa = \frac{1}{(\pt)^\kappa} \sum_{i} Q_i (\pt^i)^\kappa
+\end{equation}
+%%%
+where the sum is over all particles i in the jet with \pt $>$ 1 \GeV, $Q_i$ is the charge of the particle, $\pt^i$ is
+the particle transverse momentum, and $\kappa$ is a free parameter. The charge of the leading jet in dijets events is
+considered and different values of $\kappa$ are used: 0.3, 0.5, 0.7 by ATLAS; 0.3, 0.6, 1.0 by CMS. In addition ATLAS
+measured also the standard deviation, while CMS used alternative definitions of the jet charge based on transverse and
+longitudinal momentum of the particles with respect to the jet axis. ATLAS results are shown in
+Figure~\ref{fig:jetcharge} compared to MC predictions obtained using the CT10 NLO or the
+CTEQ6L1~\cite{Pumplin:2002vw}. The LO prediction agree with data within 5\%, while the NLO predictions are generally
+about 10\% below the data. There does not seem to be an effect from the POWHEG NLO matrix element.   
+This observation is consistent with the expectation that the PDF and (nearly collinear) fragmentation
+are responsible for the jet charge distributions.    
+
+\begin{figure*}[hbtp]
+  \centering
+  \includegraphics[width=0.48\textwidth]{Figure10a.pdf}
+  \includegraphics[width=0.48\textwidth]{Figure10b.pdf}
+  \caption{The measured average of the jet charge distribution in units of the positron charge as a function of the jet
+    pT for $\kappa=$0.3, 0.5, and 0.7 for the more central jet using CT10 (left) or CTEQ6L1 (rigth) as the PDF set. The crossed lines in the
+    bars on the data indicate the systematic uncertainty and the full extent of the bars is the sum in quadrature of the
+    statistical and systematic uncertainties. } 
+  \label{fig:jetcharge}
+\end{figure*}
+
 
 \section{Photon Physics}
 
@@ -279,213 +309,220 @@ momentum.
 
 \bibitem{Aad:2008zzm}
   G.~Aad {\it et al.} [ATLAS Collaboration],
-  %``The ATLAS Experiment at the CERN Large Hadron Collider,''
+  ``The ATLAS Experiment at the CERN Large Hadron Collider,''
   JINST {\bf 3} (2008) S08003.
   doi:10.1088/1748-0221/3/08/S08003
 
 \bibitem{Chatrchyan:2008aa}
   S.~Chatrchyan {\it et al.} [CMS Collaboration],
-  %``The CMS experiment at the CERN LHC,''
+  ``The CMS experiment at the CERN LHC,''
   JINST {\bf 3} (2008) S08004.
   doi:10.1088/1748-0221/3/08/S08004
 
 \bibitem{Cacciari:2008gp}
   M.~Cacciari, G.~P.~Salam and G.~Soyez,
-  %``The Anti-k(t) jet clustering algorithm,''
+  ``The Anti-k(t) jet clustering algorithm,''
   JHEP {\bf 0804} (2008) 063
   doi:10.1088/1126-6708/2008/04/063
   [arXiv:0802.1189 [hep-ph]].
 
 \bibitem{Lampl:2008zz} 
   W.~Lampl {\it et al.}, 
-  % ``Calorimeter clustering algorithms: Description and performance,''
+   ``Calorimeter clustering algorithms: Description and performance,''
   ATL-LARG-PUB-2008-002, ATL-COM-LARG-2008-003.
 
 \bibitem{CMS:2009nxa}
   [CMS Collaboration],
-  %``Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus, and MET,''
+  ``Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus, and MET,''
   CMS-PAS-PFT-09-001.
 
 \bibitem{Khachatryan:2016wdh} 
   V.~Khachatryan {\it et al.} [CMS Collaboration], 
-  % ``Measurement of the double-differential inclusive jet cross section in proton-proton collisions at sqrt(s) = 13 TeV,'' 
+   ``Measurement of the double-differential inclusive jet cross section in proton-proton collisions at sqrt(s) = 13 TeV,'' 
   [arXiv:1605.04436 [hep-ex]]. 
-  % Submitted to: Eur.Phys.J.C.
+   Submitted to: Eur.Phys.J.C.
 
 \bibitem{Alioli:2010xa}
   S.~Alioli, K.~Hamilton, P.~Nason, C.~Oleari and E.~Re,
-  %``Jet pair production in POWHEG,''
+  ``Jet pair production in POWHEG,''
   JHEP {\bf 1104} (2011) 081
   doi:10.1007/JHEP04(2011)081
   [arXiv:1012.3380 [hep-ph]].
 
 \bibitem{Sjostrand:2007gs}
   T.~Sjostrand, S.~Mrenna and P.~Z.~Skands,
-  %``A Brief Introduction to PYTHIA 8.1,''
+  ``A Brief Introduction to PYTHIA 8.1,''
   Comput.\ Phys.\ Commun.\  {\bf 178} (2008) 852
   doi:10.1016/j.cpc.2008.01.036
   [arXiv:0710.3820 [hep-ph]].
 
 \bibitem{Nagy:2003tz}
   Z.~Nagy,
-  %``Next-to-leading order calculation of three jet observables in hadron hadron collision,''
+  ``Next-to-leading order calculation of three jet observables in hadron hadron collision,''
   Phys.\ Rev.\ D {\bf 68} (2003) 094002
   doi:10.1103/PhysRevD.68.094002
   [hep-ph/0307268].
 
 \bibitem{Dulat:2015mca}
   S.~Dulat {\it et al.},
-  %``New parton distribution functions from a global analysis of quantum chromodynamics,''
+  ``New parton distribution functions from a global analysis of quantum chromodynamics,''
   Phys.\ Rev.\ D {\bf 93} (2016) no.3,  033006
   doi:10.1103/PhysRevD.93.033006
   [arXiv:1506.07443 [hep-ph]].
 
 \bibitem{CMS:2015haa}
   CMS Collaboration [CMS Collaboration],
-  %``Measurement of the double-differential inclusive jet cross section at sqrt(s) = 8 TeV,''
+  ``Measurement of the double-differential inclusive jet cross section at sqrt(s) = 8 TeV,''
   CMS-PAS-SMP-14-001.
 
 \bibitem{Khachatryan:2015luy}
   V.~Khachatryan {\it et al.} [CMS Collaboration],
-  %``Measurement of the inclusive jet cross section in pp collisions at $\sqrt{s} = 2.76\,\text {TeV}$,''
+  ``Measurement of the inclusive jet cross section in pp collisions at $\sqrt{s} = 2.76\,\text {TeV}$,''
   Eur.\ Phys.\ J.\ C {\bf 76} (2016) no.5,  265
   doi:10.1140/epjc/s10052-016-4083-z
   [arXiv:1512.06212 [hep-ex]].
 
 \bibitem{Lai:2010vv}
   H.~L.~Lai, M.~Guzzi, J.~Huston, Z.~Li, P.~M.~Nadolsky, J.~Pumplin and C.-P.~Yuan,
-  %``New parton distributions for collider physics,''
+  ``New parton distributions for collider physics,''
   Phys.\ Rev.\ D {\bf 82} (2010) 074024
   doi:10.1103/PhysRevD.82.074024
   [arXiv:1007.2241 [hep-ph]].
 
 \bibitem{Agashe:2014kda}
   K.~A.~Olive {\it et al.} [Particle Data Group Collaboration],
-  %``Review of Particle Physics,''
+  ``Review of Particle Physics,''
   Chin.\ Phys.\ C {\bf 38} (2014) 090001.
   doi:10.1088/1674-1137/38/9/090001
 
 \bibitem{ATLAS:2015yaa}
   G.~Aad {\it et al.} [ATLAS Collaboration],
-  %``Measurement of transverse energy-energy correlations in multi-jet events in $pp$ collisions at $\sqrt{s} = 7$ TeV using the ATLAS detector and determination of the strong coupling constant $\alpha_{\mathrm{s}}(m_Z)$,''
+  ``Measurement of transverse energy-energy correlations in multi-jet events in $pp$ collisions at $\sqrt{s} = 7$ TeV using the ATLAS detector and determination of the strong coupling constant $\alpha_{\mathrm{s}}(m_Z)$,''
   Phys.\ Lett.\ B {\bf 750} (2015) 427
   doi:10.1016/j.physletb.2015.09.050
   [arXiv:1508.01579 [hep-ex]]. 
 
 \bibitem{Aad:2015nda}
   G.~Aad {\it et al.} [ATLAS Collaboration],
-  %``Measurement of four-jet differential cross sections in $\sqrt{s}=8$ TeV proton-proton collisions using the ATLAS detector,''
+  ``Measurement of four-jet differential cross sections in $\sqrt{s}=8$ TeV proton-proton collisions using the ATLAS detector,''
   JHEP {\bf 1512} (2015) 105
   doi:10.1007/JHEP12(2015)105
   [arXiv:1509.07335 [hep-ex]].
 
 \bibitem{Berger:2008sj}
   C.~F.~Berger, Z.~Bern, L.~J.~Dixon, F.~Febres Cordero, D.~Forde, H.~Ita, D.~A.~Kosower and D.~Maitre,
-  %``An Automated Implementation of On-Shell Methods for One-Loop Amplitudes,''
+  ``An Automated Implementation of On-Shell Methods for One-Loop Amplitudes,''
   Phys.\ Rev.\ D {\bf 78} (2008) 036003
   doi:10.1103/PhysRevD.78.036003
   [arXiv:0803.4180 [hep-ph]].
 
 \bibitem{Bern:2011ep}
   Z.~Bern {\it et al.},
-  %``Four-Jet Production at the Large Hadron Collider at Next-to-Leading Order in QCD,''
+  ``Four-Jet Production at the Large Hadron Collider at Next-to-Leading Order in QCD,''
   Phys.\ Rev.\ Lett.\  {\bf 109} (2012) 042001
   doi:10.1103/PhysRevLett.109.042001
   [arXiv:1112.3940 [hep-ph]].
 
 \bibitem{Badger:2012pg}
   S.~Badger, B.~Biedermann, P.~Uwer and V.~Yundin,
-  %``Numerical evaluation of virtual corrections to multi-jet production in massless QCD,''
+  ``Numerical evaluation of virtual corrections to multi-jet production in massless QCD,''
   Comput.\ Phys.\ Commun.\  {\bf 184} (2013) 1981
   doi:10.1016/j.cpc.2013.03.018
   [arXiv:1209.0100 [hep-ph]].
 
 \bibitem{Badger:2012pf}
   S.~Badger, B.~Biedermann, P.~Uwer and V.~Yundin,
-  %``NLO QCD corrections to multi-jet production at the LHC with a centre-of-mass energy of $\sqrt{s}=8$ TeV,''
+  ``NLO QCD corrections to multi-jet production at the LHC with a centre-of-mass energy of $\sqrt{s}=8$ TeV,''
   Phys.\ Lett.\ B {\bf 718} (2013) 965
   doi:10.1016/j.physletb.2012.11.029
   [arXiv:1209.0098 [hep-ph]].
 
 \bibitem{Andersen:2009nu}
   J.~R.~Andersen and J.~M.~Smillie,
-  %``Constructing All-Order Corrections to Multi-Jet Rates,''
+  ``Constructing All-Order Corrections to Multi-Jet Rates,''
   JHEP {\bf 1001} (2010) 039
   doi:10.1007/JHEP01(2010)039
   [arXiv:0908.2786 [hep-ph]].
 
 \bibitem{Andersen:2011hs}
   J.~R.~Andersen and J.~M.~Smillie,
-  %``Multiple Jets at the LHC with High Energy Jets,''
+  ``Multiple Jets at the LHC with High Energy Jets,''
   JHEP {\bf 1106} (2011) 010
   doi:10.1007/JHEP06(2011)010
   [arXiv:1101.5394 [hep-ph]].
 
 \bibitem{Alwall:2014hca}
   J.~Alwall {\it et al.},
-  %``The automated computation of tree-level and next-to-leading order differential cross sections, and their matching to parton shower simulations,''
+  ``The automated computation of tree-level and next-to-leading order differential cross sections, and their matching to parton shower simulations,''
   JHEP {\bf 1407} (2014) 079
   doi:10.1007/JHEP07(2014)079
   [arXiv:1405.0301 [hep-ph]].
 
 \bibitem{Sjostrand:2006za}
   T.~Sjostrand, S.~Mrenna and P.~Z.~Skands,
-  %``PYTHIA 6.4 Physics and Manual,''
+  ``PYTHIA 6.4 Physics and Manual,''
   JHEP {\bf 0605} (2006) 026
   doi:10.1088/1126-6708/2006/05/026
   [hep-ph/0603175].
 
 \bibitem{Bahr:2008pv}
   M.~Bahr {\it et al.},
-  %``Herwig++ Physics and Manual,''
+  ``Herwig++ Physics and Manual,''
   Eur.\ Phys.\ J.\ C {\bf 58} (2008) 639
   doi:10.1140/epjc/s10052-008-0798-9
   [arXiv:0803.0883 [hep-ph]].
 
  \bibitem{Khachatryan:2016udy}
   V.~Khachatryan {\it et al.} [CMS Collaboration],
-  %``Azimuthal decorrelation of jets widely separated in rapidity in pp collisions at $\sqrt{s} =$ 7 TeV,''
-  %Submitted to: JHEP
+  ``Azimuthal decorrelation of jets widely separated in rapidity in pp collisions at $\sqrt{s} =$ 7 TeV,''
+  Submitted to: JHEP
   [arXiv:1601.06713 [hep-ex]].
 
 \bibitem{Khachatryan:2015xwa}
   V.~Khachatryan {\it et al.} [CMS Collaboration],
-  %``Distributions of Topological Observables in Inclusive Three- and Four-Jet Events in pp Collisions at sqrt(s) = 7 TeV,''
+  ``Distributions of Topological Observables in Inclusive Three- and Four-Jet Events in pp Collisions at sqrt(s) = 7 TeV,''
   Eur.\ Phys.\ J.\ C {\bf 75} (2015) no.7,  302
   doi:10.1140/epjc/s10052-015-3491-9
   [arXiv:1502.04785 [hep-ex]].
 
 \bibitem{Khachatryan:2016hkr}
   V.~Khachatryan {\it et al.} [CMS Collaboration],
-  %``Measurement of dijet azimuthal decorrelation in pp collisions at $\sqrt{s}$ = 8 TeV,''
-  %Submitted to: Eur.Phys.J.C
+  ``Measurement of dijet azimuthal decorrelation in pp collisions at $\sqrt{s}$ = 8 TeV,''
+  Submitted to: Eur.Phys.J.C
   [arXiv:1602.04384 [hep-ex]].
 
 \bibitem{Aad:2016oit}
   G.~Aad {\it et al.} [ATLAS Collaboration],
-  %``Measurement of the charged-particle multiplicity inside jets from $\sqrt{s}=8$ TeV $pp$ collisions with the ATLAS detector,''
+  ``Measurement of the charged-particle multiplicity inside jets from $\sqrt{s}=8$ TeV $pp$ collisions with the ATLAS detector,''
   Eur.\ Phys.\ J.\ C {\bf 76} (2016) no.6,  322
   doi:10.1140/epjc/s10052-016-4126-5
   [arXiv:1602.00988 [hep-ex]].
 
+\bibitem{Aad:2015cua}
+  G.~Aad {\it et al.} [ATLAS Collaboration],
+  ``Measurement of jet charge in dijet events from $\sqrt{s}$=8  TeV pp collisions with the ATLAS detector,''
+  Phys.\ Rev.\ D {\bf 93} (2016) no.5,  052003
+  doi:10.1103/PhysRevD.93.052003
+  [arXiv:1509.05190 [hep-ex]].
 
+\bibitem{CMS:2016yuu}
+  CMS Collaboration [CMS Collaboration],
+  ``Measurement of jet charge observables in dijet events at $\sqrt{s}=8~\mathrm{TeV}$,''
+  CMS-PAS-SMP-15-003.
 
-
-
-
-
-
-
-
-
-
+\bibitem{Pumplin:2002vw}
+  J.~Pumplin, D.~R.~Stump, J.~Huston, H.~L.~Lai, P.~M.~Nadolsky and W.~K.~Tung,
+  ``New generation of parton distributions with uncertainties from global QCD analysis,''
+  JHEP {\bf 0207} (2002) 012
+  doi:10.1088/1126-6708/2002/07/012
+  [hep-ph/0201195].
 
 
 
 
 \bibitem{Chatrchyan:2014fsa}
   S.~Chatrchyan {\it et al.} [CMS Collaboration],
-  %``Measurement of differential cross sections for the production of a pair of isolated photons in pp collisions at $\sqrt{s}=7\,\text {TeV} $,''
+  ``Measurement of differential cross sections for the production of a pair of isolated photons in pp collisions at $\sqrt{s}=7\,\text {TeV} $,''
   Eur.\ Phys.\ J.\ C {\bf 74} (2014) no.11,  3129
   doi:10.1140/epjc/s10052-014-3129-3
   [arXiv:1405.7225 [hep-ex]].
