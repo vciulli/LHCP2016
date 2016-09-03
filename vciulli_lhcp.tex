@@ -2,6 +2,7 @@
 
 \usepackage{ptdr-definitions}
 
+\providecommand{\JETPHOX} {{\textsc{JetPhox}}\xspace} 
 \providecommand{\NLOJETPP} {{\textsc{NLOJet++}}\xspace} 
 \providecommand{\NJET} {{\textsc{NJet}}\xspace} 
 \providecommand{\BLACKHAT} {{\textsc{BlackHat}}\xspace} 
@@ -48,7 +49,7 @@ Jets are usually reconstructed with the anti-\kts algorithm~\cite{Cacciari:2008g
 ATLAS uses topological clusters~\cite{Lampl:2008zz} of cells in the calorimeter as input objects. 
 In CMS and LHCb, the particle-flow (PF) event algorithm~\cite{CMS:2009nxa}
 first reconstructs and identifies each individual particle with an optimised
-combination of information from the various elements of the detector. Next PF objects are used as input to the jet
+combination of information from the various elements of the detector. Next, these PF objects are used as input to the jet
 reconstruction algorithm. ALICE uses both tracks and energy deposits in the
 Electromagnetic Calorimeter to reconstruct jets in the region $|\eta|<0.9$.
 
@@ -128,7 +129,7 @@ With the entire probed \pt range and six different rapidity bins, the best fitte
 0.1164^{+0.0060}_{-0.0043}$, which is compatible with the best current world average $\alpsmz =
 0.1185\pm0.0006$~\cite{Agashe:2014kda}. The running of \asq, measured for nine different values of renormalization scale 
 between 86\GeV and 1.5\TeV, is in good agreement with previous experiments and extends the measurement to the highest
-values of the renormalization scale.
+values of the renormalization scale, as shown in Figure~\ref{fig:AlphasRun}.
 
 \begin{figure*}[hbpt]
   \centering
@@ -154,16 +155,10 @@ correlation (TEEC) function and its associated azimuthal asymmetry in multi-jet 
 centre-of-mass energy of 7 \TeV~\cite{ATLAS:2015yaa}. The average transverse momentum of the two leading jets is
 required to be larger than 250 GeV. The TEEC distribution is obtained from the $\cos\Delta\phi_{ij}$ between any pair of
 jets $i$ and $j$, weighted by $$w_{ij} = \frac{E_{Ti}E_{Tj}}{(\sum_k E_{Tk})^2} \, ,$$ where $E_T$ is the jet transverse
-energy and the sum runs over all the
-jets in the event. With respect to other observables the TEEC are less sensitive to the jet energy scale and resolution,
+energy and the sum runs over all the jets in the event. With respect to other observables the TEEC are less sensitive to the jet energy scale and resolution,
 and to PU. The measured TEEC distribution is shown in Figure~\ref{fig:TEEC}, after unfolding for the effect of
 the detector. In the same the result of a fit to pQCD NLO calculations from \NLOJETPP including NP
-corrections is also shown. The measured value of \alpsmz is 
-$$ \alpsmz  = 0.1173 \pm 0.0010 \mathrm{(exp.)} ^{+0.0063}_{-0.0020} \mathrm{(scale)} \pm 0.0017 \mathrm{(PDF)} \pm
-0.0002 \mathrm{(NPC)} \, $$
-and it is also in agreement with the world average. This value has been obtained with the CT10 NLO PDF set, which has
-the largest PDF uncertainty, covering the variations with different PDF sets.
-
+corrections is also shown. 
 \begin{figure*}[hbpt]
   \centering
   \includegraphics[width=0.6\textwidth]{Figure5.pdf}
@@ -173,6 +168,12 @@ the largest PDF uncertainty, covering the variations with different PDF sets.
     NP corrections.}
   \label{fig:TEEC}
 \end{figure*}
+The measured value of \alpsmz is 
+$$ \alpsmz  = 0.1173 \pm 0.0010 \mathrm{(exp.)} ^{+0.0063}_{-0.0020} \mathrm{(scale)} \pm 0.0017 \mathrm{(PDF)} \pm
+0.0002 \mathrm{(NPC)} \, $$
+and it is also in agreement with the world average. This value has been obtained with the CT10 NLO PDF set, which has
+the largest PDF uncertainty, covering the variations with different PDF sets.
+
 
 The ATLAS Collaboration recently studied 4-jets events at 8 \TeV\cite{Aad:2015nda}, exploring many variables sensitive to the topology and the
 different energy scales of the event. These observables have been compared to predictions from several MC
@@ -302,6 +303,88 @@ are responsible for the jet charge distributions.
 
 
 \section{Photon Physics}
+
+Prompt photons are those produced in the hard process, mainly through the LO process $qg \to q\gamma$, and can therefore
+be used to study the gluon PDF. In addition, they are an important background to many interesting channel, e.g. Higgs
+decays into diphotons, therefore their production needs to be precisely measured.  
+The dominant background to prompt photon production are photons originating from light neutral mesons decay ($\pi^0,
+\eta$). Furthermore, inclusive prompt photon production is made up of direct and fragmentation photons: direct photons
+are produced in the hard process, whereas fragmentation photons are generated in the parton fragmentation process. The
+photon selection is designed to suppress the background from hadron decays, but also to reduce the fragmentation
+contribution, which is a less understood non-perturbative process, by applying an isolation requirement. 
+
+The photon recontruction and identification starts from a cluster of energy deposits in the electromagnetic calorimeter
+(ECAL), supplemented by the informations in the tracker detector. If there are no tracks pointing to the cluster it is an
+unconverted photon candidate, while if there are two tracks coming from a conversion vertex or one track with no hits in
+the pixel detector it is a converted photon. Both candidates are kept for the following analysis, which is then tuned
+depending on the type. 
+
+In ATLAS photons are identified with a likelihood based on nine variables related to the lateral and longitudinal
+development of the shower in the LAr sampling ECAL~\cite{ATLAS:2012ana}. In CMS the photon identification is
+based on the shape of the electromagnetic shower in the lead tungstate crystal ECAL~\cite{Chatrchyan:2013dga}.
+Both experiments apply in addition an isolation requirement to further remove the background and the fragmentation
+photons as explained above. The identification with the shower shape and the isolation are largerly uncorrelated and
+it is possible to extract from data the purity of the selected photon sample from the distribution in this two variables. 
+
+ATLAS recently published the inclusive prompt photon cross-section at 8~\TeV~\cite{Aad:2016xcr}. The measurement is
+performed for photons with an energy between 25 \GeV and 1.5 \TeV, and for a pseudorapidity of up to $\eta = 2.37$. 
+Results are shown in Figure~\ref{fig:photon} together with NLO predictions from \JETPHOX~\cite{Catani:2002ny}. 
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Figure11.pdf} 
+\caption{Differential cross sections of prompt photons in 8 \TeV data, with \JETPHOX predictions superimposed. The
+  distributions are scaled by the specified factors to separate them visually. }  
+\label{fig:photon}
+\end{center}
+\end{figure}
+Figure~\ref{fig:photon_MC} shows the ratio of the theory predictions to the data: in addition to \JETPHOX, the MC programs
+\PYTHIA and \SHERPA are shown. Predictions from \JETPHOX with CT10 PDF set are ~20\% lower than the data, though compatible within the
+uncertainty from the scale, \as, PDF, hadronization and underline event. Results from \SHERPA, with CT10 PDF, and \PYTHIA, with
+CTEQ6L1 PDF, show some significant deviations from the data: \SHERPA is better for central photons, while
+\PYTHIA is in good agreement with data for high $|\eta|$. In the case of \SHERPA up to four partons can be present in the
+final state and the parton shower treats coherently gluon and photon emissions. That means that it is not possible to
+distinguish between direct and fragmentation photons. \PYTHIA instead does the LO direct production in the ME and the
+fragmentation in the PS. As already noted, none of the two approaches is able to describe the data in the whole energy
+and pseudorapidity range.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{Figure12.pdf} 
+\caption{Ratio of theory (PYTHIA, SHERPA and JetPhox) to data for the differential prompt photon cross sections. The
+  statistical component of the uncertainty in the data is indicated by the horizontal 
+  tick marks whereas the whole error bar corresponds to the combined statistical and systematic uncertainty. The
+  additional systematic uncertainty arising from the uncertainty in the integrated luminosity is displayed separately as
+  a dotted line. The total uncertainty on \JETPHOX calculations is displayed as a band. }  
+\label{fig:photon_MC}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Figure14.pdf} 
+ \caption{Measurement of the ratio of Z + jets over $\gamma$ + jets at 8 TeV pp
+   center-of-mass energy, in events with at least 1 jet accompaning the
+   boson. Supermposed are shown different predictions at NLO QCD, NLL EW and NLO QCD+EW order. 
+   For fixed order predictions the number of jets corresponds to the
+   number of partons in the final state at the lowest order.} 
+\label{zgrNLO}
+\end{center}
+\end{figure}
+
+Finally Figure~\ref{zgrNLO} shows in addition, for events with a vector boson and at least one
+jet, fixed-order predictions from {\tt Sherpa+OpenLoops}. The $Z$+jets prediction
+is obtained from an off-shell calculation for $\ell^+\ell^-$+jets including all $Z/\gamma^*$ interference effects.
+The presented predictions are based on the recently achieved automation of NLO QCD+EW 
+calculations%~\cite{Kallweit:2014xda,Kallweit:2015dum}
+
+The agreement of the combined NLO QCD+EW prediction with the CMS data is
+remarkable over the whole spectrum. As already noted, at low transverse momentum
+NLO QCD corrections to the ratio are relevant due to mass effects, but sizable
+EW corrections due to EW Sudakov logarithms (of different size for the two
+processes) alter the shape of the ratio prediction already much below 1 TeV.
+These results show the importance of combining NLO QCD and EW corrections in a
+unified framework.
 
 \section{Conclusions}
 
@@ -517,8 +600,32 @@ are responsible for the jet charge distributions.
   doi:10.1088/1126-6708/2002/07/012
   [hep-ph/0201195].
 
+\bibitem{ATLAS:2012ana}
+  [ATLAS Collaboration],
+  ``Measurements of the photon identification efficiency with the ATLAS detector using 4.9 fb−1 of pp collision data collected in 2011,''
+  ATLAS-CONF-2012-123.
 
+\bibitem{Chatrchyan:2013dga}
+  S.~Chatrchyan {\it et al.} [CMS Collaboration],
+  ``Energy Calibration and Resolution of the CMS Electromagnetic Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV,''
+  JINST {\bf 8} (2013) P09009
+   [JINST {\bf 8} (2013) 9009]
+  doi:10.1088/1748-0221/8/09/P09009
+  [arXiv:1306.2016 [hep-ex]].
 
+\bibitem{Aad:2016xcr}
+  G.~Aad {\it et al.} [ATLAS Collaboration],
+  ``Measurement of the inclusive isolated prompt photon cross section in pp collisions at $ \sqrt{s}=8 $ TeV with the ATLAS detector,''
+  JHEP {\bf 1608} (2016) 005
+  doi:10.1007/JHEP08(2016)005
+  [arXiv:1605.03495 [hep-ex]].
+
+\bibitem{Catani:2002ny}
+  S.~Catani, M.~Fontannaz, J.~P.~Guillet and E.~Pilon,
+  ``Cross-section of isolated prompt photons in hadron hadron collisions,''
+  JHEP {\bf 0205} (2002) 028
+  doi:10.1088/1126-6708/2002/05/028
+  [hep-ph/0204023].
 
 \bibitem{Chatrchyan:2014fsa}
   S.~Chatrchyan {\it et al.} [CMS Collaboration],
