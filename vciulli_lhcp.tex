@@ -24,7 +24,8 @@
 
 \ShortTitle{Jet and photon physics in pp collisions at the LHC}
 
-\author{\speaker{ Vitaliano Ciulli }% %\thanks{} \\ Dipartimento di Fisica, Universit\`a di Firenze and Istituto
+\author{\speaker{ Vitaliano Ciulli } %\thanks{} 
+\\ Dipartimento di Fisica, Universit\`a di Firenze and Istituto
 Nazionale di Fisica Nucleare, Sezione di Firenze, via G. Sansone 1, 50019 Sesto Fiorentino, Italy \\ E-mail:
 \email{vitaliano.ciulli@fi.infn.it}} \author{on behalf of the ALICE, ATLAS, CMS and LHCb collaborations}
 
@@ -40,66 +41,63 @@ Nazionale di Fisica Nucleare, Sezione di Firenze, via G. Sansone 1, 50019 Sesto 
 
 Quantum Chromodynamics (QCD) is the fundamental theory describing strong interactions among partons, \ie quarks and
 gluons. Jets and photons production in proton-proton collisions at the Large Hadron Collider (LHC) at CERN are key processes to test predictions of
-perturbative QCD (pQCD) over a wide region in phase space, and constraint the parton distribution function (PDF) or the
-proton. They are also among the main backgrounds to new physics searches and therefore needs to be measured with the
+perturbative QCD (pQCD) over a wide region in phase space and constraint the parton distribution function (PDF) or the
+proton. In addition, they are among the main backgrounds to new physics searches and therefore needs to be estimated with the
 highest possible precision to allow discovering the tiniest deviations between data and theory.
 
-The LHC collaborations, ALICE~, ATLAS~\cite{Aad:2008zzm}, CMS~\cite{Chatrchyan:2008aa} and LHCb, performed
+The LHC collaborations, ALICE~, ATLAS~\cite{Aad:2008zzm}, CMS~\cite{Chatrchyan:2008aa} and LHCb, performed many
 measurements of inclusive jet production, multi-jets production, jet properties and photon and diphoton production. 
-In the following we will review the most recent measurements.
+In the following we will review the most recent results.
 
 \section{Jet Physics}
 
-Jets are usually reconstructed with the anti-\kts algorithm~\cite{Cacciari:2008gp} with different values for the distance parameter $R$.
+Jets are generally reconstructed with the anti-\kts algorithm~\cite{Cacciari:2008gp}, with different values for the distance parameter $R$.
 ATLAS uses topological clusters~\cite{Lampl:2008zz} of cells in the calorimeter as input objects. 
 In CMS and LHCb, the particle-flow (PF) event algorithm~\cite{CMS:2009nxa}
 first reconstructs and identifies each individual particle with an optimised
 combination of information from the various elements of the detector. Next, these PF objects are used as input to the jet
 reconstruction algorithm. ALICE uses both tracks and energy deposits in the
 Electromagnetic Calorimeter to reconstruct jets in the region $|\eta|<0.9$.
-
-The main experimental difficulties are the jet energy calibration and resolution estimate and the subtraction of pileup
-effects. Additional proton-proton interactions (pileup) produce unwanted calorimetric energy depositions and additional
+The pileup (PU) of ddditional proton-proton interactions produce unwanted calorimetric energy depositions and additional
 tracks. Different strategies have been developed to subtract these effect depending on the jet recontruction.
+The main experimental difficulties for jet-based measurements are the jet energy calibration and resolution estimate and the subtraction of pileup
+effects. 
 
 The results are usually compared to fixed-order predictions at NLO precision, complemented with electroweak (EW) corrections, and to predictions of
-various Monte Carlo (MC) event generators that combine leading-order (LO) or next-leading-order (NLO) pQCD with the modeling of parton
+various Monte Carlo (MC) event generators that combine leading-order (LO) or next-to-leading-order (NLO) pQCD with the modeling of parton
 showers (PS), hadronisation (HAD) and multiparton interactions (MPI).
-Fixed-order parton-level calculations, to be compared with measurement, must be complemented with corrections for nonperturbative
-(NP) effects that involve the modeling of HAD and MPI, which are obtained from MC programs. 
+In the case of fixed-order parton-level calculations, to be compared with measurement, they must be complemented with corrections for nonperturbative
+(NP) effects that involve the modeling of HAD and MPI,usually obtained from MC programs. 
 
-Inclusive jet production measurements have been performed with data collected at different centre-of-mass energies, ranging from 2.76 GeV to 13 TeV. 
+Measurements of inclusive jet production in proton-proton collisions have been performed at the LHC with data collected
+at different centre-of-mass energies, ranging from 2.76 GeV to 13 TeV.  
 Using 13 TeV data collected in 2015, the CMS experiment measured the double-differential inclusive jet
-cross section as a function of the jet \pt and absolute jet rapidity $|y|$.\cite{Khachatryan:2016wdh}. The data samples correspond to
-an integrated luminosity of 71\pbinv. During data collection the LHC operated with a $50\unit{ns}$ bunch spacing and the
-average number of pileup interactions observed in these data is ${\approx}19$.   
-
+cross section as a function of the jet \pt and absolute jet rapidity $|y|$\cite{Khachatryan:2016wdh}. The data samples correspond to
+an integrated luminosity of 71\pbinv. The LHC operated with a $50\unit{ns}$ bunch spacing and the
+average number of pileup interactions observed is about $19$.   
 Figure~\ref{fig:crossSection} shows the double-differential inclusive jet cross section measurements,
 presented as a function of \pt for seven $|y|$ ranges, after
 unfolding for detector effects, using the anti-\kts algorithm with $R =
 0.7$ and $0.4$, respectively. The measurements are compared to the predictions from \POWHEG~\cite{Alioli:2010xa}
 matched to \PYTHIAE~\cite{Sjostrand:2007gs} PS. The data are remarkably consistent with the predictions over a wide range of jet \pt from 114\GeV up to
 2\TeV.
-
 \begin{figure*}[htbp] \centering
   \includegraphics[width=0.48\textwidth]{Figure1-a.pdf}
   \includegraphics[width=0.48\textwidth]{Figure1-b.pdf}
-  \caption{Double-differential inclusive jet cross section as function of jet \pt at 13 TeV. Data (points) and
+  \caption{Double-differential inclusive jet cross section as function of jet \pt at 13 TeV measured by CMS. Data (points) and
 predictions from \POWHEG + \PYTHIAE with tune CUETM1 (line) are shown. Jets are clustered with the anti-\kts
 algorithm with $R = 0.7$ (left) and $0.4$ (right).}
   \label{fig:crossSection}
 \end{figure*}
-
 Results are also compared to the \NLOJETPP~\cite{Nagy:2003tz} predictions using the CT14 PDF set~\cite{Dulat:2015mca}, corrected for NP and EW effects.
 The ratios of data over the \NLOJETPP predictions are shown in Fig.~\ref{fig:ratio_CT14} for the rapidity region
 $|y|<0.5$, but the same trend is observed in all the rapidity ranges. The relatively poor agreement for $R = 0.4$ might
 be due to parton-shower and soft-gluon resummation contributions, which are missing in fixed-order calculations, or to
 higher-order effects. 
-
 \begin{figure*}[htbp]
   \includegraphics[width=0.48\textwidth]{Figure2-a.pdf}
   \includegraphics[width=0.48\textwidth]{Figure2-b.pdf}
-  \caption{Ratio of measured values to theoretical prediction from \NLOJETPP using the CT14 PDF set and corrected for
+  \caption{Ratio of values measured by CMS to theoretical prediction from \NLOJETPP using the CT14 PDF set and corrected for
 the NP and EW effects. Predictions employing three other PDF sets are also shown for comparison. Jets are
 clustered with the anti-\kts algorithm with a distance parameter of
 0.7 (left) and 0.4 (right). The error bars correspond to the statistical
@@ -110,12 +108,11 @@ uncertainties of the data and the shaded bands to the total experimental systema
 The CMS collaboration has also recently made available new results for the double-differential inclusive jet cross section at 8
 \TeV~\cite{CMS:2015haa} and 2.76 \TeV~\cite{Khachatryan:2015luy}. In the measurement at 8 \TeV, the ratio to the
 cross section at 7 \TeV is also presented. A good agreement is observed in general between data and predictions, but for high
-transverse momentum some discrepancies is present, in particular in the region $1.0 < \abs{y} < 1.5$, shown in
+transverse momentum some discrepancies are present, in particular in the region $1.0 < \abs{y} < 1.5$, as shown in
 Figure~\ref{fig:ratio8to7}.
-
 \begin{figure*}[hbpt]
   \centering
-  \includegraphics[width=0.6\textwidth]{Figure3.pdf}
+  \includegraphics[width=0.55\textwidth]{Figure3.pdf}
   \caption{Ratio of double-differential inclusive jet cross sections
     between $\mathrm{\sqrt{s}=8}$\TeV and $\mathrm{\sqrt{s}=7}$\TeV
     for rapidity bins $1.0 < |y| < 1.5$. In the top plots the yellow band shows the total
@@ -127,33 +124,29 @@ Figure~\ref{fig:ratio8to7}.
     theoretical uncertainties as a shaded band.}
   \label{fig:ratio8to7}
 \end{figure*}
-
-The inclusive jet cross section at 8 \TeV is also important by iteself for contraining the PDFs, in particular the gluon
+The inclusive jet cross section at 8 \TeV is very important for contraining the PDFs of the proton, in particular the gluon
 one, as it is shown in Figure~\ref{fig:pdf}, where the measurement is combined with the HERA
-data\cite{Abramowicz:2015mha} using the HERAPDF method~\cite{Aaron:2009aa} 
-\begin{figure}[h]
+data\cite{Abramowicz:2015mha} using the HERAPDF method~\cite{Aaron:2009aa}. 
+\begin{figure}[htp]
 \center
-   \includegraphics[width=0.6\textwidth]{Figure3b.pdf}
+   \includegraphics[width=0.55\textwidth]{Figure3b.pdf}
 \setlength{\unitlength}{1cm}
-\caption{Distributions of gluon as functions of $x$ at the starting scale
-  $Q^2=1.9$\GeV$^2$. The results of the fit to the HERA
-  data and inclusive jet measurements at 8\TeV (shaded band), and to
-  HERA only (hatched band) are compared with their total
+\caption{Distribution of gluon as a function of $x$ at the starting scale
+  $Q^2=1.9$\GeV$^2$. The upper panel shows results of the fit to the HERA
+  data and inclusive CMS jet measurements at 8\TeV (shaded band), and to
+  HERA only (hatched band), with their total
   uncertainties, as determined by using the HERAPDF method. In the
   bottom panels the fractional uncertainties are shown.}
 \label{fig:pdf}
 \end{figure}
-%where the effect of the measurement is shown by combining it with the HERAPDF.
 Furthermore the strong coupling constant \as is extracted from the measurement at 8 \TeV, using for the calculation the CT10 NLO PDF
 set~\cite{Lai:2010vv}, which is found to provide the best agreement with data.
 With the entire probed \pt range and six different rapidity bins, the best fitted value is found to be $\alpsmz =
 0.1164^{+0.0060}_{-0.0043}$, which is compatible with the best current world average $\alpsmz =
-0.1185\pm0.0006$~\cite{Agashe:2014kda}. The running of \asq, measured for nine different values of renormalization scale 
-between 86\GeV and 1.5\TeV, is in good agreement with previous experiments and extends the measurement to the highest
-values of the renormalization scale, as shown in Figure~\ref{fig:AlphasRun}.
-\begin{figure*}[hbpt]
+0.1185\pm0.0006$~\cite{Agashe:2014kda}. 
+\begin{figure*}[htp]
   \centering
- \includegraphics[width=0.9\textwidth]{Figure4.pdf}
+ \includegraphics[width=0.70\textwidth]{Figure4.pdf}
  \caption{The running \asq as a function of the scale $Q$ is shown, as
    obtained by using the CT10 NLO PDF set. The solid line and the
    uncertainty band are obtained by evolving the extracted \alpsmz
@@ -161,7 +154,7 @@ values of the renormalization scale, as shown in Figure~\ref{fig:AlphasRun}.
    equations. The dashed line represents the evolution of the world
    average value. The black dots in the figure show the numbers
    obtained from the $\sqrt{s}=8$\TeV inclusive jet
-   measurement. %Results from other CMS%~\cite{R32, CMSTTBar, CMS-PAS-SMP-12-027}
+   measurement by CMS. %Results from other CMS%~\cite{R32, CMSTTBar, CMS-PAS-SMP-12-027}
    %, D0%~\cite{D0Alpha1, D0Alpha2}
    %, H1%~\cite{H1Alpha1, H1Alpha2}
    %, and ZEUS%~\cite{ZEUSAlpha}
@@ -169,20 +162,23 @@ values of the renormalization scale, as shown in Figure~\ref{fig:AlphasRun}.
  }
 \label{fig:AlphasRun}
 \end{figure*}
+Figure~\ref{fig:AlphasRun} shows that the running of \asq, measured for nine different values of renormalization scale 
+between 86\GeV and 1.5\TeV, is in good agreement with previous experiments and extends the measurement to the highest
+values of the renormalization scale.
 
 The ATLAS Collaboration has recently measured the strong coupling constant using the transverse energy-energy
 correlation (TEEC) function and its associated azimuthal asymmetry in multi-jet events at a
 centre-of-mass energy of 7 \TeV~\cite{ATLAS:2015yaa}. The average transverse momentum of the two leading jets is
 required to be larger than 250 GeV. The TEEC distribution is obtained from the $\cos\Delta\phi_{ij}$ between any pair of
 jets $i$ and $j$, weighted by $$w_{ij} = \frac{E_{Ti}E_{Tj}}{(\sum_k E_{Tk})^2} \, ,$$ where $E_T$ is the jet transverse
-energy and the sum runs over all the jets in the event. With respect to other observables the TEEC are less sensitive to the jet energy scale and resolution,
-and to PU. The measured TEEC distribution is shown in Figure~\ref{fig:TEEC}, after unfolding for the effect of
-the detector. In the same the result of a fit to pQCD NLO calculations from \NLOJETPP including NP
+energy and the sum runs over all jets in the event. With respect to other observables the TEEC is less sensitive to the jet energy scale and resolution,
+and to PU. The measured TEEC distribution is shown in Figure~\ref{fig:TEEC}, after unfolding the effects of
+the detector. In the same plot the result of a fit to pQCD NLO calculations from \NLOJETPP including NP
 corrections is also shown. 
-\begin{figure*}[hbpt]
+\begin{figure*}[tpb]
   \centering
-  \includegraphics[width=0.6\textwidth]{Figure5.pdf}
-  \caption{The unfolded distributions for transverse energy-energy correlation compared with the results of a fit to
+  \includegraphics[width=0.55\textwidth]{Figure5.pdf}
+  \caption{The unfolded distribution of the TEEC measured by ATLAS, compared with the results of a fit to
     pQCD NLO calculations including NP corrections. The green shaded band indicates the uncertainty on the
     theoretical predictions, which includes the sum in quadrature of uncertainties associated with scale, \as, PDF and
     NP corrections.}
@@ -202,20 +198,18 @@ y_{2j}^{max}$, shown in Figure~\ref{fig:4jet}, is one of the variables where som
 The NLO predictions, \BLACKHAT/\SHERPA~\cite{Berger:2008sj,Bern:2011ep} and
 \NJET/\SHERPA~\cite{Badger:2012pg,Badger:2012pf}, are almost always compatible with the data within their 
 theoretical uncertainties. The \HEJ~\cite{Andersen:2009nu,Andersen:2011hs} all-orders calculation and the multi-leg calculation with up to four partons in the
-matrix element (ME) generated by \MADGRAPH~\cite{Alwall:2014hca} and matched to the \PYTHIAS~\cite{Sjostrand:2006za} PS also provides a good description of
-the data. The $2\ \to 2$ MC generators \PYTHIAE and \HERWIGpp~\cite{Bahr:2008pv}
- describe the data relatively poorly. These results show therefore 
-the importance of the more sophisticated calculations in a variety of scenarios. 
-
-\begin{figure*}[hbpt]
+matrix element (ME) generated by \MADGRAPH~\cite{Alwall:2014hca} and matched to the \PYTHIAS~\cite{Sjostrand:2006za} PS also provide a good description of
+the data. The $2\to 2$ MC generators \PYTHIAE and \HERWIGpp~\cite{Bahr:2008pv}
+ describe the data relatively poorly. These results show the need of more sophisticated calculations in many cases. 
+\begin{figure*}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{Figure6a.pdf}\\
-  \includegraphics[width=0.9\textwidth]{Figure6b.pdf}
-  \caption{Unfolded four-jet differential cross section as a function of $\Delta y_{2j}^{max}$, compared to different
-    predictions: \PYTHIAE, \HERWIGpp and \MADGRAPH+PYTHIAS (top), and HEJ, \NJET/\SHERPA and \BLACKHAT/\SHERPA (bottom). The MC
+  \includegraphics[width=0.75\textwidth]{Figure6a.pdf}\\
+  \includegraphics[width=0.75\textwidth]{Figure6b.pdf}
+  \caption{ATLAS unfolded four-jet differential cross section as a function of $\Delta y_{2j}^{max}$, compared to different
+    predictions: \PYTHIAE, \HERWIGpp and \MADGRAPH+\PYTHIAS (top), and HEJ, \NJET/\SHERPA and \BLACKHAT/\SHERPA (bottom). The MC
     and \HEJ predictions are multiplied by the factors indicated in the legend in order to be normalized to the events observed in the data. The left 
     panel shows the full spectra and the right panel the ratios of the different predictions to the data. The solid band represents the total experimental systematic
-    uncertainty centred at one. The patterned band represents the NLO scale and PDF uncertainties calculated from
+    uncertainty. The patterned band represents the NLO scale and PDF uncertainties calculated from
      \NJET/\SHERPA. The scale uncertainties for \HEJ (not drawn) are typically
     +50\%-30\%. The ratio curves are formed by the central values and vertical uncertainty lines resulting from the
     propagation of the statistical uncertainties of the predictions and those of the unfolded data spectrum.} 
@@ -232,11 +226,10 @@ $2\pi/3 \leq \dphi < \pi$, corresponding to a final state with at least 3 jets, 
 2\pi/3$, where at least 4-jets must be present. The predictions are normalized separately in these two region and
 describe the data well over several order of magnitude, though they increasingly deviate from data for lower values of
 \dphi, especially at low \ptmax. 
-
 \begin{figure}[hbtp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Figure7a.pdf}
-  \caption{Normalized dijet cross section differential in \dphi for
+  \includegraphics[width=0.55\textwidth]{Figure7a.pdf}
+  \caption{CMS normalized dijet cross section differential in \dphi for
     seven \ptmax regions, scaled by multiplicative factors for
     presentation purposes.  The error bars on the data points include
     statistical and systematic uncertainties. Overlaid on the data
@@ -251,19 +244,17 @@ describe the data well over several order of magnitude, though they increasingly
 }
   \label{fig:dijet}
 \end{figure}
-
 In Figure~\ref{fig:dijet_ratios_MC_data} the ratio of several MC generators predictions to
 the the data is shown. Similar conclusions as for the 4-jets analysis performed by ATLAS can be drawn. Event generators with only two outgoing
-partons at matrix-element fail to describe the measurement. This apply also to \POWHEG that has NLO 
+partons at matrix-element fail to describe the data. This apply also to \POWHEG that has NLO 
 QCD corrections matched to the \PYTHIAE PS. In the case of \MADGRAPH+\PYTHIAS from two to four outgoing partons are
 provided by the ME calculations and are matched to the PS, providing a very good description of the data down to very
 low \dphi values.  
-
 \begin{figure*}[hbtp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Figure8.pdf}
+  \includegraphics[width=0.55\textwidth]{Figure8.pdf}
   \caption{Ratios of \PYTHIAS, \HERWIGpp, \PYTHIAE, \MADGRAPH + \PYTHIAS, and
-    \POWHEG + \PYTHIAE predictions to the normalized dijet cross
+    \POWHEG + \PYTHIAE predictions to the CMS normalized dijet cross
     section differential in \dphi, for all \ptmax regions.
     The solid band indicates the total experimental uncertainty and
     the error bars on the MC points represent the statistical
@@ -273,21 +264,20 @@ low \dphi values.
 
 Jets are not only a probe for pQCD or other high transverse momentum processes. They are also interesting for their
 properties, which depends mostly on quark fragmentation and hadronisation. An example of this kind of studies is the
-measurement of charged-particle multiplicity $<n_\mathrm{charge}>$ in jets performed by ATLAS on the 8~\TeV data sample~\cite{Aad:2016oit}.
+measurement of charged-particle multiplicity in jets $<n_\mathrm{charge}>$ performed by ATLAS on the 8~\TeV data sample~\cite{Aad:2016oit}.
 The multiplicity is measured including charged tracks with $\pt > 0.5$, 2 or 5~\GeV, for jets with $\pt > 50$~\GeV and up to
 $1.5$~\TeV. Results are compared to \HERWIGpp, \PYTHIAS and \PYTHIAE with different underlying event tunings, showing
 that the description of data improves for the most recent tunes. 
 The charged multiplicity is important to discriminate between quarks- and gluon-initiated jets, being larger in the case
 of a gluon jet. For this reason after unfolding the results for detector effects, the  $<n_\mathrm{charge}>$ is
 extracted separately for quark and gluon jets as a function of the jet transverse momentum. Results are shown in
-Figure~\ref{fig:chargemult} and confirm that this number is larger for gluon jets as expected, with a dependence on the jet transverse
+Figure~\ref{fig:chargemult} and confirm that this value is larger for gluon jets, as expected, with a dependence on the jet transverse
 momentum.
-
 \begin{figure*}[hbtp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Figure9.pdf}
+  \includegraphics[width=0.55\textwidth]{Figure9.pdf}
   \caption{Jet \pt dependence of charged-particle multiplicity, for tracks $\pt > 0.5$~\GeV, for quark- and
-    gluon-initiated jets.}
+    gluon-initiated jets, measured by ATLAS.}
   \label{fig:chargemult}
 \end{figure*}
 
@@ -299,22 +289,21 @@ jet. It is defined as
 Q^\kappa = \frac{1}{(\pt)^\kappa} \sum_{i} Q_i (\pt^i)^\kappa
 \end{equation}
 %%%
-where the sum is over all particles i in the jet with \pt $>$ 1 \GeV, $Q_i$ is the charge of the particle, $\pt^i$ is
+where the sum is over all particles $i$ in the jet with \pt $>$ 1 \GeV, $Q_i$ is the charge of the particle, $\pt^i$ is
 the particle transverse momentum, and $\kappa$ is a free parameter. The charge of the leading jet in dijets events is
 considered and different values of $\kappa$ are used: 0.3, 0.5, 0.7 by ATLAS; 0.3, 0.6, 1.0 by CMS. In addition ATLAS
 measured also the standard deviation, while CMS used alternative definitions of the jet charge based on transverse and
 longitudinal momentum of the particles with respect to the jet axis. ATLAS results are shown in
 Figure~\ref{fig:jetcharge} compared to MC predictions obtained using the CT10 NLO or the
-CTEQ6L1~\cite{Pumplin:2002vw}. The LO prediction agree with data within 5\%, while the NLO predictions are generally
-about 10\% below the data. There does not seem to be an effect from the POWHEG NLO matrix element.   
+CTEQ6L1~\cite{Pumplin:2002vw} as the PDF set. The LO prediction agree with data within 5\%, while the NLO predictions are generally
+\~10\% below the data. There does not seem to be an effect from the NLO corrections in \POWHEG.   
 This observation is consistent with the expectation that the PDF and (nearly collinear) fragmentation
 are responsible for the jet charge distributions.    
-
 \begin{figure*}[hbtp]
   \centering
   \includegraphics[width=0.48\textwidth]{Figure10a.pdf}
   \includegraphics[width=0.48\textwidth]{Figure10b.pdf}
-  \caption{The measured average of the jet charge distribution in units of the positron charge as a function of the jet
+  \caption{The measured average of the jet charge distribution as a function of the jet
     \pt for $\kappa=$0.3, 0.5, and 0.7 for the more central jet using CT10 (left) or CTEQ6L1 (right) as the PDF set. The crossed lines in the
     bars on the data indicate the systematic uncertainty and the full extent of the bars is the sum in quadrature of the
     statistical and systematic uncertainties. } 
@@ -322,21 +311,22 @@ are responsible for the jet charge distributions.
 \end{figure*}
 
 
-\section{Photon Physics}
+\section{Prompt Photons Physics}
 
 Prompt photons are those produced in the hard process, mainly through the LO process $qg \to q\gamma$, and can therefore
 be used to study the gluon PDF. In addition, they are an important background to many interesting channel, e.g. Higgs
-decays into diphotons, therefore their production needs to be precisely measured.  
+decays into diphotons, and their production needs to be precisely measured.  
+Furthermore, inclusive prompt photon production is made up of direct and fragmentation photons: direct photons
+are produced in the hard process, whereas fragmentation photons are generated in the parton fragmentation process. 
 The dominant background to prompt photon production are photons originating from light neutral mesons decay ($\pi^0,
-\eta$). Furthermore, inclusive prompt photon production is made up of direct and fragmentation photons: direct photons
-are produced in the hard process, whereas fragmentation photons are generated in the parton fragmentation process. The
-photon selection is designed to suppress the background from hadron decays, but also to reduce the fragmentation
-contribution, which is a less understood non-perturbative process, by applying an isolation requirement. 
+\eta$). 
+The photon selection is designed to suppress the background from hadron decays, but also to reduce the fragmentation
+contribution, which is a less understood non-perturbative process. This is achieved by applying an isolation requirement. 
 
 The photon recontruction and identification starts from a cluster of energy deposits in the electromagnetic calorimeter
 (ECAL), supplemented by the informations in the tracker detector. If there are no tracks pointing to the cluster it is an
 unconverted photon candidate, while if there are two tracks coming from a conversion vertex or one track with no hits in
-the pixel detector it is a converted photon. Both candidates are kept for the following analysis, which is then tuned
+the pixel detector it is a converted photon. Both candidates are kept for the following analyses, which are then tuned
 depending on the type. 
 
 In ATLAS photons are identified with a likelihood based on nine variables related to the lateral and longitudinal
@@ -344,22 +334,22 @@ development of the shower in the LAr sampling ECAL~\cite{ATLAS:2012ana}. In CMS 
 based on the shape of the electromagnetic shower in the lead tungstate crystal ECAL~\cite{Chatrchyan:2013dga}.
 Both experiments apply in addition an isolation requirement to further remove the background and the fragmentation
 photons as explained above. The identification with the shower shape and the isolation are partially uncorrelated and
-it is possible to extract from data the purity of the selected photon sample from the distribution in this two variables. 
+it is possible to extract from data the purity of the selected photon sample from the distribution in these two variables. 
 
 ATLAS recently published the inclusive prompt photon cross-section at 8~\TeV~\cite{Aad:2016xcr}. The measurement is
 performed for photons with an energy between 25 \GeV and 1.5 \TeV, and for a pseudorapidity of up to $\eta = 2.37$. 
 Results are shown in Figure~\ref{fig:photon} together with NLO predictions from \JETPHOX~\cite{Catani:2002ny}. 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.6\textwidth]{Figure11.pdf} 
-\caption{Differential cross sections of prompt photons in 8 \TeV data, with \JETPHOX predictions superimposed. The
+\includegraphics[width=0.8\textwidth]{Figure11.pdf} 
+\caption{Differential cross sections of prompt photons in 8 \TeV data measured by ATLAS. \JETPHOX predictions are superimposed. The
   distributions are scaled by the specified factors to separate them visually. }  
 \label{fig:photon}
 \end{center}
 \end{figure}
 Figure~\ref{fig:photon_MC} shows the ratio of the theory predictions to the data: in addition to \JETPHOX, the MC programs
 \PYTHIA and \SHERPA are shown. Predictions from \JETPHOX with CT10 PDF set are ~20\% lower than the data, though compatible within the
-uncertainty from the scale, \as, PDF, hadronisation and underline event. Results from \SHERPA, with CT10 PDF, and \PYTHIA, with
+uncertainty. Results from \SHERPA, with CT10 PDF, and \PYTHIA, with
 CTEQ6L1 PDF, show some significant deviations from the data: \SHERPA is better for central photons, while
 \PYTHIA is in good agreement with data for high $|\eta|$. In the case of \SHERPA up to four partons can be present in the
 final state and the parton shower treats coherently gluon and photon emissions. That means that it is not possible to
@@ -378,10 +368,10 @@ and pseudorapidity range.
 \end{center}
 \end{figure}
 
-The CMS experiment has measured the differential cross sections for the production of a photon pair in association with
+The CMS Collaboration has measured the differential cross sections for the production of a photon pair in association with
 jets at $\sqrt{s}=7$~TeV~\cite{CMS:2015hha}. The fraction of prompt diphoton events in data is extracted from a template fit to the photon
 isolation distribution. The signal template has been obtained from the data itself with the ``random cone''
-technique, where the isolation energy in a region separated from the photon. Several differential observables are
+technique, where the isolation energy is measured in a region separated from the photon. Several differential observables are
 studied with inclusive 1-jet and 2-jet selections and results are compared to LO and NLO QCD theoretical predictions
 from \SHERPA, \AMCATNLO~\cite{Alwall:2014hca}, and \GOSAM~\cite{Gehrmann:2013aga} event generators. As an example, the
 angular correlations between the leading jet and the photons are shown in Figure~\ref{fig:diphot}. 
@@ -389,7 +379,7 @@ angular correlations between the leading jet and the photons are shown in Figure
 \begin{center}
 \includegraphics[width=0.48\textwidth]{Figure13a.pdf}
 \includegraphics[width=0.48\textwidth]{Figure13b.pdf}
-\caption{Differential cross section as a function of the $\Delta R$ separation between the leading jet and the leading (left) or subleading (right) photon. All distributions are normalized to unitary area.}
+\caption{CMS differential cross section as a function of the $\Delta R$ separation between the leading jet and the leading (left) or subleading (right) photon. All distributions are normalized to unitary area.}
 \label{fig:diphot}
 \end{center}
 \end{figure}
@@ -398,18 +388,19 @@ The \SHERPA and
 observables. The parton-level \GOSAM prediction also describes the data well except for the angular correlations between
 photons and jets, where discrepancies are observed.
 
-Finally, the ratio of the associated production of a $\mathrm{Z}/\gamma^*$ or a $\gamma$ with one or more jets has been recently measured in
-proton-proton collisions at 8 TeV center-of-mass energy by CMS~\cite{Khachatryan:2015ira}.
+Finally, the ratio of the associated production of a $\mathrm{Z}/\gamma^*$ or a $\gamma$ with one or more jets, measured in
+proton-proton collisions at 8 TeV center-of-mass energy by CMS~\cite{Khachatryan:2015ira}, has been recently compared to
+new theoretical calculations in a study of the effect of EW correction~\cite{Badger:2016bpw}.
 In the limit of high transverse momentum of the vector boson the effects due to the mass of the Z
 boson are small, and the cross section ratio of Z+jets to $\gamma$+jets is expected to become constant. 
 Figure~\ref{zgrNLO} compare the data to for events with a vector boson and at least one
 jet to fixed-order predictions from \SHERPA+\OPENLOOPS including both QCD and EW NLO corrections~\cite{Kallweit:2014xda,Kallweit:2015dum}. 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.6\textwidth]{Figure14.pdf} 
- \caption{Measurement of the ratio of Z + jets over $\gamma$ + jets at 8 TeV pp
+\includegraphics[width=0.55\textwidth]{Figure14.pdf} 
+ \caption{CMS measurement of the ratio of Z + jets over $\gamma$ + jets at 8 TeV pp
    center-of-mass energy, in events with at least 1 jet accompanying the
-   boson. Superimposed are shown different predictions at NLO QCD, next-leading-logs (NLL) EW and NLO QCD+EW order. 
+   boson. Superimposed are shown different predictions at NLO QCD, next-to-leading-logs (NLL) EW and NLO QCD+EW order. 
    For fixed order predictions the number of jets corresponds to the
    number of partons in the final state at the lowest order.} 
 \label{zgrNLO}
@@ -426,8 +417,8 @@ TeV. These results show the importance of combining NLO QCD and EW corrections i
 We reviewed the the most recent measurements of inclusive jet production, multi-jets production, jet properties and
 photon and diphoton production in proton-proton collisions at the LHC. These measurements are important to test pQCD
 predictions and constraint the PDF of the proton. The results that have been presented show that
-event generators are in good agreement with the data. With the increase of the
-centre-of-mass energy to 13 \TeV, however, there are hints that it will be necessary to include higher order QCD and EW
+event generators are generally in good agreement with the data. With the increase of the
+centre-of-mass energy to 13 \TeV, however, there are hints that it is necessary to include higher order QCD and EW
 corrections to describe the data with the precision required by the high expected luminosity. 
 
 \begin{thebibliography}{99}
@@ -710,6 +701,11 @@ corrections to describe the data with the precision required by the high expecte
    Erratum: [JHEP {\bf 1604} (2016) 010]
   doi:10.1007/JHEP04(2016)010, 10.1007/JHEP10(2015)128
   [arXiv:1505.06520 [hep-ex]].
+
+\bibitem{Badger:2016bpw}
+  J.~R.~Andersen {\it et al.},
+  ``Les Houches 2015: Physics at TeV Colliders Standard Model Working Group Report,'', pagg 61-77,
+  arXiv:1605.04692 [hep-ph].
 
 \bibitem{Kallweit:2014xda}
   S.~Kallweit, J.~M.~Lindert, P.~Maierhöfer, S.~Pozzorini and M.~Schönherr,
