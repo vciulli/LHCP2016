@@ -1,8 +1,6 @@
 \documentclass{PoS}
 
 \usepackage{ptdr-definitions}
-\usepackage{lineno}
-\linenumbers
 
 \providecommand{\JETPHOX} {{\textsc{JetPhox}}\xspace} 
 \providecommand{\OPENLOOPS} {{\textsc{OpenLoops}}\xspace} 
@@ -51,7 +49,7 @@ The LHC collaborations, ALICE~\cite{Aamodt:2008zz}, ATLAS~\cite{Aad:2008zzm}, CM
 measurements of inclusive jet production, multi-jets production, jet properties and photon and diphoton production. 
 In the following we will review the most recent results.
 
-\section{Jet Physics}
+\section{Jet physics}
 
 Jets are generally reconstructed with the anti-\kts algorithm~\cite{Cacciari:2008gp}, with different values for the distance parameter $R$.
 ATLAS uses topological clusters~\cite{Lampl:2008zz} of cells in the calorimeter as input objects. 
@@ -61,7 +59,7 @@ combination of information from the various elements of the detector. Next, thes
 reconstruction algorithm. ALICE uses tracks only or tracks plus energy deposits
 in the Electromagnetic Calorimeter to reconstruct jets in the regions
 $|\eta|<0.9$ and $|\eta|<0.7$, respectively~\cite{Abelev:2013fn}.
-The pileup (PU) of ddditional proton-proton interactions produce unwanted calorimetric energy depositions and additional
+The pileup (PU) of additional proton-proton interactions produce unwanted calorimetric energy depositions and additional
 tracks. Different strategies have been developed to subtract these effect depending on the jet recontruction.
 The main experimental difficulties for jet-based measurements are the jet energy calibration and resolution estimate and the subtraction of pileup
 effects. 
@@ -70,7 +68,7 @@ The results are usually compared to fixed-order predictions at NLO precision, co
 various Monte Carlo (MC) event generators that combine leading-order (LO) or next-to-leading-order (NLO) pQCD with the modeling of parton
 showers (PS), hadronisation (HAD) and multiparton interactions (MPI).
 In the case of fixed-order parton-level calculations, to be compared with measurement, they must be complemented with corrections for nonperturbative
-(NP) effects that involve the modeling of HAD and MPI,usually obtained from MC programs. 
+(NP) effects that involve the modeling of HAD and MPI, usually obtained from MC programs. 
 
 Measurements of inclusive jet production in proton-proton collisions have been performed at the LHC with data collected
 at different centre-of-mass energies, ranging from 2.76 GeV to 13 TeV.  
@@ -208,8 +206,8 @@ y_{2j}^{max}$, shown in Figure~\ref{fig:4jet}, is one of the variables where som
     and \HEJ predictions are multiplied by the factors indicated in the legend in order to be normalized to the events observed in the data. The left 
     panel shows the full spectra and the right panel the ratios of the different predictions to the data. The solid band represents the total experimental systematic
     uncertainty. The patterned band represents the NLO scale and PDF uncertainties calculated from
-     \NJET/\SHERPA. The scale uncertainties for \HEJ (not drawn) are typically
-    +50\%-30\%. The ratio curves are formed by the central values and vertical uncertainty lines resulting from the
+     \NJET/\SHERPA. The scale uncertainties for HEJ (not drawn) typically range from -30\% to +50\%. The ratio curves
+     are formed by the central values and vertical uncertainty lines resulting from the 
     propagation of the statistical uncertainties of the predictions and those of the unfolded data spectrum.} 
   \label{fig:4jet}
 \end{figure*} 
@@ -314,7 +312,7 @@ The ATLAS collaboration measured instead the first and second moments of the
 distributions. Results are shown in Figure~\ref{fig:jetcharge}
 compared to MC predictions obtained using the CT10 NLO or the 
 CTEQ6L1~\cite{Pumplin:2002vw} as the PDF set. The LO prediction agree with data within 5\%, while the NLO predictions are generally
-\~10\% below the data. There does not seem to be an effect from the NLO corrections in \POWHEG.   
+10\% below the data. There does not seem to be an effect from the NLO corrections in \POWHEG.   
 This observation is consistent with the expectation that the PDF and (nearly collinear) fragmentation
 are responsible for the jet charge distributions.    
 \begin{figure*}[hbtp]
@@ -330,7 +328,7 @@ are responsible for the jet charge distributions.
 \end{figure*}
 
 
-\section{Prompt Photons Physics}
+\section{Prompt photon physics}
 
 Prompt photons are those produced in the hard process, mainly through the LO process $qg \to q\gamma$, and can therefore
 be used to study the gluon PDF. In addition, they are an important background to many interesting channel, e.g. Higgs
@@ -435,7 +433,7 @@ TeV. These results show the importance of combining NLO QCD and EW corrections i
 
 \section{Conclusions}
 
-We reviewed the the most recent measurements of inclusive jet production, multi-jets production, jet properties and
+We reviewed the most recent measurements of inclusive jet production, multi-jet production, jet properties and
 photon and diphoton production in proton-proton collisions at the LHC. These measurements are important to test pQCD
 predictions and constraint the PDF of the proton. The results that have been presented show that
 event generators are generally in good agreement with the data. With the increase of the
@@ -445,25 +443,29 @@ corrections to describe the data with the precision required by the high expecte
 \begin{thebibliography}{99}
 
 \bibitem{Aamodt:2008zz}
-  K.~Aamodt {\it et al.} [ALICE Collaboration],
+  %K.~Aamodt {\it et al.} 
+  ALICE Collaboration,
   {\it The ALICE experiment at the CERN LHC},
   JINST {\bf 3} (2008) S08002.
   doi:10.1088/1748-0221/3/08/S08002
 
 \bibitem{Aad:2008zzm}
-  G.~Aad {\it et al.} [ATLAS Collaboration],
+  %G.~Aad {\it et al.} 
+  ATLAS Collaboration,
   {\it The ATLAS Experiment at the CERN Large Hadron Collider},
   JINST {\bf 3} (2008) S08003.
   doi:10.1088/1748-0221/3/08/S08003
 
 \bibitem{Chatrchyan:2008aa}
-  S.~Chatrchyan {\it et al.} [CMS Collaboration],
+  %S.~Chatrchyan {\it et al.} 
+  CMS Collaboration,
   {\it The CMS experiment at the CERN LHC},
   JINST {\bf 3} (2008) S08004.
   doi:10.1088/1748-0221/3/08/S08004
 
 \bibitem{Alves:2008zz}
-  A.~A.~Alves, Jr. {\it et al.} [LHCb Collaboration],
+  %A.~A.~Alves, Jr. {\it et al.} 
+  LHCb Collaboration,
   {\it The LHCb Detector at the LHC},
   JINST {\bf 3} (2008) S08005.
   doi:10.1088/1748-0221/3/08/S08005
@@ -476,32 +478,35 @@ corrections to describe the data with the precision required by the high expecte
   [arXiv:0802.1189 [hep-ph]].
 
 \bibitem{Lampl:2008zz} 
-  W.~Lampl {\it et al.}, 
-   {\it Calorimeter clustering algorithms: Description and performance},
+  W.~Lampl {\it et al.},
+  {\it Calorimeter clustering algorithms: Description and performance},
   ATL-LARG-PUB-2008-002, ATL-COM-LARG-2008-003.
 
 \bibitem{CMS:2009nxa}
-  [CMS Collaboration],
+  CMS Collaboration,
   {\it Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus, and MET},
   CMS-PAS-PFT-09-001.
 
 \bibitem{Aaij:2013nxa}
-  R.~Aaij {\it et al.} [LHCb Collaboration],
+  %R.~Aaij {\it et al.} 
+  LHCb Collaboration,
   {\it Study of forward Z + jet production in pp collisions at $\sqrt{s} = 7$ TeV},
   JHEP {\bf 1401} (2014) 033,
   doi:10.1007/JHEP01(2014)033,
   [arXiv:1310.8197 [hep-ex]].
 
 \bibitem{Abelev:2013fn}
-  B.~Abelev {\it et al.} [ALICE Collaboration],
+  %B.~Abelev {\it et al.} 
+  ALICE Collaboration,
   {\it Measurement of the inclusive differential jet cross section in $pp$ collisions at $\sqrt{s} = 2.76$ TeV},
   Phys.\ Lett.\ B {\bf 722} (2013) 262,
   doi:10.1016/j.physletb.2013.04.026,
   [arXiv:1301.3475 [nucl-ex]].
 
 \bibitem{Khachatryan:2016wdh} 
-  V.~Khachatryan {\it et al.} [CMS Collaboration], 
-   {\it Measurement of the double-differential inclusive jet cross section in proton-proton collisions at sqrt(s) = 13 TeV},
+  %V.~Khachatryan {\it et al.} 
+  CMS Collaboration, 
+  {\it Measurement of the double-differential inclusive jet cross section in proton-proton collisions at sqrt(s) = 13 TeV},
   [arXiv:1605.04436 [hep-ex]], 
    Submitted to: Eur.Phys.J.C.
 
@@ -534,26 +539,29 @@ corrections to describe the data with the precision required by the high expecte
   [arXiv:1506.07443 [hep-ph]].
 
 \bibitem{CMS:2015haa}
-  CMS Collaboration [CMS Collaboration],
+  CMS Collaboration,
   {\it Measurement of the double-differential inclusive jet cross section at sqrt(s) = 8 TeV},
   CMS-PAS-SMP-14-001.
 
 \bibitem{Khachatryan:2015luy}
-  V.~Khachatryan {\it et al.} [CMS Collaboration],
+  %V.~Khachatryan {\it et al.} 
+  CMS Collaboration,
   {\it Measurement of the inclusive jet cross section in pp collisions at $\sqrt{s} = 2.76\,\text {TeV}$},
   Eur.\ Phys.\ J.\ C {\bf 76} (2016) no.5,  265,
   doi:10.1140/epjc/s10052-016-4083-z,
   [arXiv:1512.06212 [hep-ex]].
 
 \bibitem{Abramowicz:2015mha}
-  H.~Abramowicz {\it et al.} [H1 and ZEUS Collaborations],
+  %H.~Abramowicz {\it et al.} 
+  H1 and ZEUS Collaborations,
   {\it Combination of measurements of inclusive deep inelastic ${e^{\pm }p}$ scattering cross sections and QCD analysis of HERA data},
   Eur.\ Phys.\ J.\ C {\bf 75} (2015) no.12,  580,
   doi:10.1140/epjc/s10052-015-3710-4,
   [arXiv:1506.06042 [hep-ex]].
 
 \bibitem{Aaron:2009aa}
-  F.~D.~Aaron {\it et al.} [H1 and ZEUS Collaborations],
+  %F.~D.~Aaron {\it et al.} 
+  H1 and ZEUS Collaborations,
   {\it Combined Measurement and QCD Analysis of the Inclusive e+- p Scattering Cross Sections at HERA},
   JHEP {\bf 1001} (2010) 109,
   doi:10.1007/JHEP01(2010)109,
@@ -573,14 +581,16 @@ corrections to describe the data with the precision required by the high expecte
   doi:10.1088/1674-1137/38/9/090001
 
 \bibitem{ATLAS:2015yaa}
-  G.~Aad {\it et al.} [ATLAS Collaboration],
+  %G.~Aad {\it et al.} 
+  ATLAS Collaboration,
   {\it Measurement of transverse energy-energy correlations in multi-jet events in $pp$ collisions at $\sqrt{s} = 7$ TeV using the ATLAS detector and determination of the strong coupling constant $\alpha_{\mathrm{s}}(m_Z)$},
   Phys.\ Lett.\ B {\bf 750} (2015) 427,
   doi:10.1016/j.physletb.2015.09.050,
   [arXiv:1508.01579 [hep-ex]]. 
 
 \bibitem{Aad:2015nda}
-  G.~Aad {\it et al.} [ATLAS Collaboration],
+  % G.~Aad {\it et al.} 
+  ATLAS Collaboration,
   {\it Measurement of four-jet differential cross sections in $\sqrt{s}=8$ TeV proton-proton collisions using the ATLAS detector},
   JHEP {\bf 1512} (2015) 105,
   doi:10.1007/JHEP12(2015)105,
@@ -650,40 +660,45 @@ corrections to describe the data with the precision required by the high expecte
   [arXiv:0803.0883 [hep-ph]].
 
  \bibitem{Khachatryan:2016udy}
-  V.~Khachatryan {\it et al.} [CMS Collaboration],
+  %V.~Khachatryan {\it et al.} 
+  CMS Collaboration,
   {\it Azimuthal decorrelation of jets widely separated in rapidity in pp collisions at $\sqrt{s} =$ 7 TeV},
   Submitted to: JHEP,
   [arXiv:1601.06713 [hep-ex]].
 
 \bibitem{Khachatryan:2015xwa}
-  V.~Khachatryan {\it et al.} [CMS Collaboration],
+  %V.~Khachatryan {\it et al.} 
+  CMS Collaboration,
   {\it Distributions of Topological Observables in Inclusive Three- and Four-Jet Events in pp Collisions at sqrt(s) = 7 TeV},
   Eur.\ Phys.\ J.\ C {\bf 75} (2015) no.7,  302,
   doi:10.1140/epjc/s10052-015-3491-9,
   [arXiv:1502.04785 [hep-ex]].
 
 \bibitem{Khachatryan:2016hkr}
-  V.~Khachatryan {\it et al.} [CMS Collaboration],
+  %V.~Khachatryan {\it et al.} 
+  CMS Collaboration,
   {\it Measurement of dijet azimuthal decorrelation in pp collisions at $\sqrt{s}$ = 8 TeV},
   Submitted to: Eur.Phys.J.C,
   [arXiv:1602.04384 [hep-ex]].
 
 \bibitem{Aad:2016oit}
-  G.~Aad {\it et al.} [ATLAS Collaboration],
+  %G.~Aad {\it et al.} 
+  ATLAS Collaboration,
   {\it Measurement of the charged-particle multiplicity inside jets from $\sqrt{s}=8$ TeV $pp$ collisions with the ATLAS detector},
   Eur.\ Phys.\ J.\ C {\bf 76} (2016) no.6,  322,
   doi:10.1140/epjc/s10052-016-4126-5,
   [arXiv:1602.00988 [hep-ex]].
 
 \bibitem{Aad:2015cua}
-  G.~Aad {\it et al.} [ATLAS Collaboration],
+  %G.~Aad {\it et al.} 
+  ATLAS Collaboration,
   {\it Measurement of jet charge in dijet events from $\sqrt{s}$=8 TeV pp collisions with the ATLAS detector},
   Phys.\ Rev.\ D {\bf 93} (2016) no.5,  052003,
   doi:10.1103/PhysRevD.93.052003,
   [arXiv:1509.05190 [hep-ex]].
 
 \bibitem{CMS:2016yuu}
-  CMS Collaboration [CMS Collaboration],
+  CMS Collaboration,
   {\it Measurement of jet charge observables in dijet events at $\sqrt{s}=8~\mathrm{TeV}$},
   CMS-PAS-SMP-15-003.
 
@@ -695,12 +710,13 @@ corrections to describe the data with the precision required by the high expecte
   [hep-ph/0201195].
 
 \bibitem{ATLAS:2012ana}
-  [ATLAS Collaboration],
+  ATLAS Collaboration,
   {\it Measurements of the photon identification efficiency with the ATLAS detector using 4.9 fb−1 of pp collision data collected in 2011},
   ATLAS-CONF-2012-123.
 
 \bibitem{Chatrchyan:2013dga}
-  S.~Chatrchyan {\it et al.} [CMS Collaboration],
+  %S.~Chatrchyan {\it et al.} 
+  CMS Collaboration,
   {\it Energy Calibration and Resolution of the CMS Electromagnetic Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV},
   JINST {\bf 8} (2013) P09009,
    [JINST {\bf 8} (2013) 9009],
@@ -708,7 +724,8 @@ corrections to describe the data with the precision required by the high expecte
   [arXiv:1306.2016 [hep-ex]].
 
 \bibitem{Aad:2016xcr}
-  G.~Aad {\it et al.} [ATLAS Collaboration],
+  %G.~Aad {\it et al.} 
+  ATLAS Collaboration,
   {\it Measurement of the inclusive isolated prompt photon cross section in pp collisions at $ \sqrt{s}=8 $ TeV with the ATLAS detector},
   JHEP {\bf 1608} (2016) 005,
   doi:10.1007/JHEP08(2016)005,
@@ -722,7 +739,7 @@ corrections to describe the data with the precision required by the high expecte
   [hep-ph/0204023].
 
 \bibitem{CMS:2015hha}
-  CMS Collaboration [CMS Collaboration],
+  CMS Collaboration,
   {\it Production of pairs of isolated photons in association with jets in pp collisions at sqrt(s) = 7 TeV},
   CMS-PAS-SMP-14-021.
 
@@ -735,14 +752,16 @@ corrections to describe the data with the precision required by the high expecte
   [arXiv:1303.0824 [hep-ph]].
 
 \bibitem{Chatrchyan:2014fsa}
-  S.~Chatrchyan {\it et al.} [CMS Collaboration],
+  %S.~Chatrchyan {\it et al.} 
+  CMS Collaboration,
   {\it Measurement of differential cross sections for the production of a pair of isolated photons in pp collisions at $\sqrt{s}=7\,\text {TeV} $},
   Eur.\ Phys.\ J.\ C {\bf 74} (2014) no.11,  3129,
   doi:10.1140/epjc/s10052-014-3129-3
   [arXiv:1405.7225 [hep-ex]].
 
 \bibitem{Khachatryan:2015ira}
-  V.~Khachatryan {\it et al.} [CMS Collaboration],
+  %V.~Khachatryan {\it et al.} 
+  CMS Collaboration,
   {\it Comparison of the Z/$\gamma$$^{∗}$ + jets to $\gamma$ + jets cross sections in pp collisions at $ \sqrt{s}=8 $ TeV},
   JHEP {\bf 1510} (2015) 128
    Erratum: [JHEP {\bf 1604} (2016) 010],
